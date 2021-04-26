@@ -1,11 +1,53 @@
 <template>
-<div>
-  
-</div>
+<!-- <div></div> -->
 <!-- <div class="card"> -->
 
+  <!-- <h1>Contact</h1> -->
 <!-- <div class="container">  -->
-  
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="First name"
+          aria-label="First name"
+        />
+      </div>
+      <div class="col">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Last name"
+          aria-label="Last name"
+        />
+      </div>
+      <div class="col">
+        <label for="inputEmail4" class="form-label"></label>
+        <input
+          type="email"
+          class="form-control"
+          id="inputEmail4"
+          placeholder="Email"
+        />
+      </div>
+      <div class="col">
+        <textarea
+          class="form-control"
+          placeholder="Leave a message here"
+          id="floatingTextarea2"
+          style="height: 100px"
+        ></textarea>
+        <!-- <label for="floatingTextarea2">Comments</label> -->
+    
+      
+     
+    </div>
+    </div>
+       <div class="col-btn">
+        <input class="btn btn-primary" type="submit" value="Send" />
+      </div>
+  </div>
   <!-- </div> -->
 <!-- </div> -->
 

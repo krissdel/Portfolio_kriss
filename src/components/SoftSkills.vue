@@ -7,7 +7,6 @@
       <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
       
     </div>
-       <cloud :data="words" :fontSizeMapper="fontSizeMapper" />
 
         <!-- <router-link to="/Projects"> -->
 <!-- <button type="button" class="btn btn-white btn- animate">projects</button> -->
@@ -16,6 +15,7 @@
     </div> -->
 
           <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
+       <cloud :data="words" :fontSizeMapper="fontSizeMapper" />
 
     <!-- </router-link>  -->
 
