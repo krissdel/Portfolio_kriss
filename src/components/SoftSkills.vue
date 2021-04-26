@@ -21,47 +21,22 @@
 
     <div>
             <span class="tags4"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-
-      <!-- <ul>
-        <li><a href="#">Mot clé 1</a></li>
-        <li><a href="#">Mot clé 2</a></li>
-        <li><a href="#">Mot clé 3</a></li>
-        <li><a href="#">Mot clé 4</a></li>
-        <li><a href="#">Mot clé 5</a></li>
-        <li><a href="#">Mot clé 6</a></li>
-        <li><a href="#">Mot clé 7</a></li>
-        <li><a href="#">Mot clé 8</a></li>
-        <li><a href="#">Mot clé 9</a></li>
-        <li><a href="#">Mot clé 10</a></li>
-        <li><a href="#">Mot clé 11</a></li>
-        <li><a href="#">Mot clé 12</a></li>
-        <li><a href="#">Mot clé 13</a></li>
-        <li><a href="#">Mot clé 14</a></li>
-        <li><a href="#">Mot clé 15</a></li>
-        <li><a href="#">Mot clé 16</a></li>
-        <li><a href="#">Mot clé 17</a></li>
-        <li><a href="#">Mot clé 19</a></li>
-      </ul> -->
     </div>
+            <span class="tags6"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
+
   </div>
-        <!-- <span class="tags6"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span> -->
+
 
 </template>
 
 <script>
-import Cloud from '@/components/Cloud.vue'
+import Cloud from 'vue-d3-cloud'
 
 export default {
   name: "Home",
   data() {
         return {
             words: [
-                // { text: 'Vue', value: 1000 },
-                // { text: 'js', value: 200 },
-                // { text: 'is', value: 800 },
-                // { text: 'very cool', value: 1000000 },
-                // { text: 'lunch', value: 100 },
-
                 { text: 'Vue.js', value: 1000 },
                 { text: 'node.js', value: 200 },
                 { text: 'express', value: 800 },
