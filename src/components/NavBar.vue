@@ -1,6 +1,9 @@
 <template>
   <div id="nav_bar">
+
     <nav class="nav_bar_icons">
+              <img src="../assets/Ellipse 1.png" alt="Image logo" class="img" />
+
       <router-link to="/">
         <span style="font-size: 1.5em; color: white">
           <i class="fas fa-home"></i>
@@ -124,6 +127,9 @@ export default {
 }
 .fa-home:active{
   color: rgb(17, 236, 229);
+}
+.img {
+  padding: 10px;
 }
 /* =====[icones hover]============================ */
 .nav ul {

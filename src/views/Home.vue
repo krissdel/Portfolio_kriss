@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-  <SoftSkills msg="Christian DELORME "/>
+  <SoftSkills msg="Christian DELORME"/>
   </div>
 </template>
 
@@ -16,3 +16,7 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+
+</style>

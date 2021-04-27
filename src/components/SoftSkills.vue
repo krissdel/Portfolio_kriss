@@ -1,71 +1,73 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <!-- <h1>{{ msg }}</h1> -->
+
+<div id="wrapper">
+  <h1><span class="letter01">M</span><span class="letter02">a</span><span class="letter03">t</span><span class="letter04">h</span><span class="letter05">i</span><span class="letter06">e</span><span class="letter07">u</span><span class="letter08">&nbsp;</span><span class="letter09">C</span><span class="letter10">h</span><span class="letter11">a</span><span class="letter12">r</span><span class="letter13">t</span><span class="letter14">i</span><span class="letter15">e</span><span class="letter16">r</span></h1>
+</div>
+
+
+
+
+
+
+
 
     <div class="tags">
       <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>
       <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-      
     </div>
 
-        <!-- <router-link to="/Projects"> -->
-<!-- <button type="button" class="btn btn-white btn- animate">projects</button> -->
-<!-- <div class="text-box">
+    <!-- <router-link to="/Projects"> -->
+    <!-- <button type="button" class="btn btn-white btn- animate">projects</button> -->
+    <!-- <div class="text-box">
       <a href="#" class="btn btn-white btn- animate"> soft</a>
     </div> -->
 
-          <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-       <cloud :data="words" :fontSizeMapper="fontSizeMapper" />
+    <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
+    <cloud :data="words" :fontSizeMapper="fontSizeMapper" />
 
     <!-- </router-link>  -->
 
     <div>
-            <span class="tags4"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
+      <span class="tags4"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
     </div>
-            <span class="tags6"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-
+    <span class="tags6"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
   </div>
-
-
 </template>
 
 <script>
-import Cloud from 'vue-d3-cloud'
+import Cloud from "vue-d3-cloud";
 
 export default {
   name: "Home",
   data() {
-        return {
-            words: [
-                { text: 'Vue.js', value: 1000 },
-                { text: 'node.js', value: 200 },
-                { text: 'express', value: 800 },
-                { text: 'Javascript', value: 1000000 },
-                { text: 'SQL', value: 100 },
-                { text: 'Sass', value: 200 },
-                { text: 'HTML', value: 800 },
-                { text: 'GitHub', value: 10000 },
-                { text: 'CSS', value: 100 },
-            ],
-            fontSizeMapper: word => Math.log2(word.value) * 5,
-        }
-    },
-    components: {
+    return {
+      words: [
+        { text: "Vue.js", value: 1000 },
+        { text: "node.js", value: 200 },
+        { text: "express", value: 800 },
+        { text: "Javascript", value: 1000000 },
+        { text: "SQL", value: 100 },
+        { text: "Sass", value: 200 },
+        { text: "HTML", value: 800 },
+        { text: "GitHub", value: 10000 },
+        { text: "CSS", value: 100 },
+      ],
+      fontSizeMapper: (word) => Math.log2(word.value) * 5,
+    };
+  },
+  components: {
     Cloud,
   },
   props: {
     msg: String,
   },
 
+  mounted() {},
 
-  mounted () {
-},
-
-  methods: {
- 
-  
-}
-}
+  methods: {},
+};
 </script>
 
 
@@ -74,9 +76,73 @@ export default {
     padding-left: 60px;
 } */
 
+
+/* *************************************************** */
+
+/* Styles généraux */
+* {margin:0; padding:0; font-size:1em; box-sizing:border-box;}
+body {transition:background-color 4s ease; background:linear-gradient(70deg,#FC9DAB,#C586D9,#A5A1F0,#86BAD9,#9DFADB); background-size:auto; background-size:500% 250%; animation:degradeFond 30s ease infinite;}
+@keyframes degradeFond {
+  0% {background-position:0 50%;}
+  50% {background-position:50% 50%;}
+  100% {background-position:0 50%;}
+}
+
+/* Réglages du bloc de texte général */
+#wrapper {margin-top:20vh; text-align:center; font-family:'Dancing Script', cursive;}
+#wrapper h1 {white-space:normal; display:inline-block; font-size:2em; font-weight:200; background:linear-gradient(75deg, #E5E0F9,#C5C7DB,#EAEDF3,#C5D2DB,#E0F6F9); color:transparent; background-clip:text; -webkit-background-clip:text; position:relative;}
+
+/* Animations des lettres */
+h1 span {opacity:0;}
+.letter01 {animation:letters 3s ease 0000ms forwards;}
+.letter02 {animation:letters 3s ease 0500ms forwards;}
+.letter03 {animation:letters 3s ease 1000ms forwards;}
+.letter04 {animation:letters 3s ease 1500ms forwards;}
+.letter05 {animation:letters 3s ease 2000ms forwards;}
+.letter06 {animation:letters 3s ease 2500ms forwards;}
+.letter07 {animation:letters 3s ease 3000ms forwards;}
+.letter08 { }
+.letter09 {animation:letters 3s ease 4500ms forwards;}
+.letter10 {animation:letters 3s ease 5000ms forwards;}
+.letter11 {animation:letters 3s ease 5500ms forwards;}
+.letter12 {animation:letters 3s ease 6000ms forwards;}
+.letter13 {animation:letters 3s ease 6500ms forwards;}
+.letter14 {animation:letters 3s ease 7000ms forwards;}
+.letter15 {animation:letters 3s ease 7500ms forwards;}
+.letter16 {animation:letters 3s ease 8000ms forwards;}
+.letter17 {animation:letters 3s ease 8500ms forwards;}
+
+@keyframes letters {
+  0% {opacity:0;}
+  100% {opacity:1.0;}
+}
+
+h1::after {content:""; display:block; background:linear-gradient(45deg, #F9CFF3,#D4B6DB,#E5D6F2,#C0B6DB,#CFCFF9); height:3px; width:0%; opacity:0; margin-top:.2em; animation:lineWidth 10s ease-in-out forwards;}
+@keyframes lineWidth {
+  0% {width:0%; opacity:0;}
+  100% {width:100%; opacity:1.0;}
+}
+
+h1 {animation:textAnimated 60s ease infinite;}
+@keyframes textAnimated {
+  0% {background:linear-gradient(70deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:-12em 0; background-clip:text; -webkit-background-clip:text; color:transparent;}
+  50% {background:linear-gradient(85deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:0 0; background-clip:text; -webkit-background-clip:text; color:transparent;}
+  100% {background:linear-gradient(70deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:-12em; background-clip:text; -webkit-background-clip:text; color:transparent;}
+}
+
+h1::before {content:"Christian DELORME"; display:block; position:absolute; width:100%; animation:scintillement 5s ease-in 5s infinite;}
+@keyframes scintillement {
+  0% {background:linear-gradient(45deg, rgba(255,255,255,0.3), rgba(200,200,200,0.3)) no-repeat; background-clip:text; background-position:-12em 0;}
+  25% {background:linear-gradient(75deg, rgba(255,255,255,0.5), rgba(200,200,200,0.5)) no-repeat; background-clip:text; background-position:12em 0;}
+  30% {background:linear-gradient(45deg, rgba(255,255,255,0), rgba(200,200,200,0)) no-repeat; background-clip:text; background-position:0 0;}
+}
+
+
+
+/* *********************************************** */
 h1 {
   font-family: "Libre Baskerville", serif;
-  color: white;
+  color: rgb(17, 236, 229);
   padding-left: 60px;
 }
 .tags1 {
@@ -107,10 +173,10 @@ h1 {
 .tags4 {
   font-size: 20px;
   font-family: "La Belle Aurore", cursive;
-display: flex;
+  display: flex;
   top: 0;
   color: #515152;
-   margin-left: 18vw;
+  margin-left: 18vw;
   margin-top: 21vh;
 }
 .tags5 {
@@ -120,7 +186,7 @@ display: flex;
   top: 0;
   display: flex;
   color: #515152;
-   margin-left: 66vw;
+  margin-left: 66vw;
   margin-top: 21vh;
 }
 .tags6 {
@@ -130,7 +196,7 @@ display: flex;
   top: 0;
   display: flex;
   color: #515152;
-   margin-left: 80vw;
+  margin-left: 80vw;
   margin-top: 21vh;
 }
 
@@ -138,9 +204,9 @@ display: flex;
 
 a.btn.btn-white.btn-.animate {
   font-family: "Libre Baskerville", serif;
-  border-color: rgb(17, 236, 229);;
+  border-color: rgb(17, 236, 229);
   /* background: rgb(17, 236, 229); */
-  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px
+  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
 }
 /* body {
   background-color: #060b0e;
@@ -220,28 +286,33 @@ a.btn.btn-white.btn-.animate {
 
 /* -----[keyword cloud]------------------------- */
 
-#tagsphere{
-  background: url('/images/background.png') top center no-repeat;
-  height: 230px; width: 380px;
+#tagsphere {
+  background: url("/images/background.png") top center no-repeat;
+  height: 230px;
+  width: 380px;
   padding: 10px;
   margin: 10px;
   margin: 0 auto;
 }
-ul li a, ul li a:visited{
-  color: #E29154;
+ul li a,
+ul li a:visited {
+  color: #e29154;
   font-weight: bold;
   text-decoration: none;
 }
-ul li a:hover, ul li.link1 a:hover, ul li.link2 a:hover, ul li.link3 a:hover{
-  color: #4EB6BF;
+ul li a:hover,
+ul li.link1 a:hover,
+ul li.link2 a:hover,
+ul li.link3 a:hover {
+  color: #4eb6bf;
 }
-ul li.link1 a{
-  color: #D8B596;
+ul li.link1 a {
+  color: #d8b596;
 }
-ul li.link2 a{
-  color: #EAAF84
+ul li.link2 a {
+  color: #eaaf84;
 }
-ul li.link3 a{
-  color: #FF8000;
+ul li.link3 a {
+  color: #ff8000;
 }
 </style>
