@@ -2,16 +2,22 @@
   <div class="hello">
     <!-- <h1>{{ msg }}</h1> -->
 
-<div id="wrapper">
-  <h1><span class="letter01">M</span><span class="letter02">a</span><span class="letter03">t</span><span class="letter04">h</span><span class="letter05">i</span><span class="letter06">e</span><span class="letter07">u</span><span class="letter08">&nbsp;</span><span class="letter09">C</span><span class="letter10">h</span><span class="letter11">a</span><span class="letter12">r</span><span class="letter13">t</span><span class="letter14">i</span><span class="letter15">e</span><span class="letter16">r</span></h1>
-</div>
+    <div id="wrapper">
+      <h1>
+        <span class="letter01">C</span><span class="letter02">h</span
+        ><span class="letter03">r</span><span class="letter04">i</span
+        ><span class="letter05">s</span><span class="letter06">t</span
+        ><span class="letter07">i</span><span class="letter08">a</span>
+        <span class="letter09">n</span>
+        <!-- <span class="letter10"> &nbsp;</span> -->
+        &nbsp;
 
-
-
-
-
-
-
+        <span class="letter11">D</span>
+        <span class="letter12">e</span><span class="letter13">l</span>
+        <span class="letter14">o</span><span class="letter15">r</span>
+        <span class="letter16">m</span><span class="letter17">e</span>
+      </h1>
+    </div>
 
     <div class="tags">
       <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>
@@ -76,74 +82,160 @@ export default {
     padding-left: 60px;
 } */
 
-
 /* *************************************************** */
 
 /* Styles généraux */
-* {margin:0; padding:0; font-size:1em; box-sizing:border-box;}
+/* * {margin:0; padding:0; font-size:1em; box-sizing:border-box;}
 body {transition:background-color 4s ease; background:linear-gradient(70deg,#FC9DAB,#C586D9,#A5A1F0,#86BAD9,#9DFADB); background-size:auto; background-size:500% 250%; animation:degradeFond 30s ease infinite;}
 @keyframes degradeFond {
   0% {background-position:0 50%;}
   50% {background-position:50% 50%;}
   100% {background-position:0 50%;}
-}
+} */
 
 /* Réglages du bloc de texte général */
-#wrapper {margin-top:20vh; text-align:center; font-family:'Dancing Script', cursive;}
-#wrapper h1 {white-space:normal; display:inline-block; font-size:2em; font-weight:200; background:linear-gradient(75deg, #E5E0F9,#C5C7DB,#EAEDF3,#C5D2DB,#E0F6F9); color:transparent; background-clip:text; -webkit-background-clip:text; position:relative;}
+/* margin-top:20vh;  */
+#wrapper {
+  text-align: center;
+  font-family: "Libre Baskerville", serif;
+}
+#wrapper h1 {
+  white-space: normal;
+  width: 35%;
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 200;
+  background: linear-gradient(
+    75deg,
+    #e5e0f9,
+    #c5c7db,
+    #eaedf3,
+    #c5d2db,
+    #e0f6f9
+  );
+  color: #11ece5;
+  background-clip: text;
+  -webkit-background-clip: text;
+  position: relative;
+}
 
 /* Animations des lettres */
-h1 span {opacity:0;}
-.letter01 {animation:letters 3s ease 0000ms forwards;}
-.letter02 {animation:letters 3s ease 0500ms forwards;}
-.letter03 {animation:letters 3s ease 1000ms forwards;}
-.letter04 {animation:letters 3s ease 1500ms forwards;}
-.letter05 {animation:letters 3s ease 2000ms forwards;}
-.letter06 {animation:letters 3s ease 2500ms forwards;}
-.letter07 {animation:letters 3s ease 3000ms forwards;}
-.letter08 { }
-.letter09 {animation:letters 3s ease 4500ms forwards;}
-.letter10 {animation:letters 3s ease 5000ms forwards;}
-.letter11 {animation:letters 3s ease 5500ms forwards;}
-.letter12 {animation:letters 3s ease 6000ms forwards;}
-.letter13 {animation:letters 3s ease 6500ms forwards;}
-.letter14 {animation:letters 3s ease 7000ms forwards;}
-.letter15 {animation:letters 3s ease 7500ms forwards;}
-.letter16 {animation:letters 3s ease 8000ms forwards;}
-.letter17 {animation:letters 3s ease 8500ms forwards;}
+h1 span {
+  opacity: 0;
+}
+.letter01 {
+  animation: letters 3s ease 0000ms forwards;
+}
+.letter02 {
+  animation: letters 3s ease 0300ms forwards;
+}
+.letter03 {
+  animation: letters 3s ease 600ms forwards;
+}
+.letter04 {
+  animation: letters 3s ease 900ms forwards;
+}
+.letter05 {
+  animation: letters 3s ease 1200ms forwards;
+}
+.letter06 {
+  animation: letters 3s ease 1500ms forwards;
+}
+.letter07 {
+  animation: letters 3s ease 1800ms forwards;
+}
+.letter08 {
+  animation: letters 3s ease 2100ms forwards;
+}
+.letter09 {
+  animation: letters 3s ease 2400ms forwards;
+}
+
+.letter10 {
+  animation: letters 3s ease 2700ms forwards;
+}
+
+.letter11 {
+  animation: letters 1s ease 3000ms forwards;
+}
+.letter12 {
+  animation: letters 1s ease 3300ms forwards;
+}
+.letter13 {
+  animation: letters 1s ease 3600ms forwards;
+}
+.letter14 {
+  animation: letters 1s ease 3900ms forwards;
+}
+.letter15 {
+  animation: letters 1s ease 4200ms forwards;
+}
+.letter16 {
+  animation: letters 1s ease 4500ms forwards;
+}
+.letter17 {
+  animation: letters 1s ease 4800ms forwards;
+}
 
 @keyframes letters {
-  0% {opacity:0;}
-  100% {opacity:1.0;}
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
-h1::after {content:""; display:block; background:linear-gradient(45deg, #F9CFF3,#D4B6DB,#E5D6F2,#C0B6DB,#CFCFF9); height:3px; width:0%; opacity:0; margin-top:.2em; animation:lineWidth 10s ease-in-out forwards;}
+/* -----[souslignage]---------------------------------------- */
+h1::after {
+  content: "";
+  display: block;
+  background: linear-gradient(
+    45deg,
+    #11ece5,
+    #11ece5,
+    #11ece5,
+    #11ece5,
+    #11ece5
+  );
+  height: 0.5px;
+  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
+  width: 0%;
+  opacity: 0;
+  margin-top: 0.2em;
+  animation: lineWidth 7s ease-in-out forwards;
+}
 @keyframes lineWidth {
-  0% {width:0%; opacity:0;}
-  100% {width:100%; opacity:1.0;}
+  0% {
+    width: 0%;
+    opacity: 0;
+  }
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
 }
+/* ------------------------ */
 
-h1 {animation:textAnimated 60s ease infinite;}
+/* h1 {animation:textAnimated 60s ease;} 
 @keyframes textAnimated {
-  0% {background:linear-gradient(70deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:-12em 0; background-clip:text; -webkit-background-clip:text; color:transparent;}
-  50% {background:linear-gradient(85deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:0 0; background-clip:text; -webkit-background-clip:text; color:transparent;}
-  100% {background:linear-gradient(70deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:-12em; background-clip:text; -webkit-background-clip:text; color:transparent;}
-}
 
-h1::before {content:"Christian DELORME"; display:block; position:absolute; width:100%; animation:scintillement 5s ease-in 5s infinite;}
+0% {background:linear-gradient(70deg,#fdcdcd,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:-12em 0; background-clip:text; -webkit-background-clip:text; color:#11ece5;}
+  50% {background:linear-gradient(85deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:0 0; background-clip:text; -webkit-background-clip:text; color:#11ece5;}
+ 100% {background:linear-gradient(70deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:-12em; background-clip:text; -webkit-background-clip:text; color:#11ece5;}
+ } */
+
+/* h1::before {content:"Christian Delorme"; display:block; position:absolute; width:100%; animation:scintillement 5s ease-in 5s infinite;}
 @keyframes scintillement {
-  0% {background:linear-gradient(45deg, rgba(255,255,255,0.3), rgba(200,200,200,0.3)) no-repeat; background-clip:text; background-position:-12em 0;}
-  25% {background:linear-gradient(75deg, rgba(255,255,255,0.5), rgba(200,200,200,0.5)) no-repeat; background-clip:text; background-position:12em 0;}
-  30% {background:linear-gradient(45deg, rgba(255,255,255,0), rgba(200,200,200,0)) no-repeat; background-clip:text; background-position:0 0;}
-}
-
-
+	0% {background:linear-gradient(45deg, rgb(245, 247, 245),rgb(245, 247, 245)) no-repeat; background-clip:text; background-position:-12em 0;}
+	25% {background:linear-gradient(75deg, rgb(245, 247, 245),rgb(245, 247, 245)) no-repeat; background-clip:text; background-position:12em 0;}
+	30% {background:linear-gradient(45deg, rgba(255,255,255,0), rgba(200,200,200,0)) no-repeat; background-clip:text; background-position:0 0;}
+} */
 
 /* *********************************************** */
 h1 {
   font-family: "Libre Baskerville", serif;
   color: rgb(17, 236, 229);
-  padding-left: 60px;
+  /* padding-left: 60px; */
 }
 .tags1 {
   font-size: 20px;
@@ -202,18 +294,18 @@ h1 {
 
 /* -----[button soft skills]--------------- */
 
-a.btn.btn-white.btn-.animate {
+/* a.btn.btn-white.btn-.animate {
   font-family: "Libre Baskerville", serif;
-  border-color: rgb(17, 236, 229);
-  /* background: rgb(17, 236, 229); */
-  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
-}
+  border-color: rgb(17, 236, 229); */
+/* background: rgb(17, 236, 229); */
+/* box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
+} */
 /* body {
   background-color: #060b0e;
   font-weight: bold;
   width: 900px;
 } */
-
+/* 
 .text-box {
   margin-left: -11vw;
   margin-top: 21vh;
@@ -282,7 +374,7 @@ a.btn.btn-white.btn-.animate {
     opacity: 1;
     transform: translateY(0px);
   }
-}
+} */
 
 /* -----[keyword cloud]------------------------- */
 
