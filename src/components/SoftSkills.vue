@@ -9,9 +9,7 @@
         ><span class="letter05">s</span><span class="letter06">t</span
         ><span class="letter07">i</span><span class="letter08">a</span>
         <span class="letter09">n</span>
-        <!-- <span class="letter10"> &nbsp;</span> -->
         &nbsp;
-
         <span class="letter11">D</span>
         <span class="letter12">e</span><span class="letter13">l</span>
         <span class="letter14">o</span><span class="letter15">r</span>
@@ -84,14 +82,6 @@ export default {
 
 /* *************************************************** */
 
-/* Styles généraux */
-/* * {margin:0; padding:0; font-size:1em; box-sizing:border-box;}
-body {transition:background-color 4s ease; background:linear-gradient(70deg,#FC9DAB,#C586D9,#A5A1F0,#86BAD9,#9DFADB); background-size:auto; background-size:500% 250%; animation:degradeFond 30s ease infinite;}
-@keyframes degradeFond {
-  0% {background-position:0 50%;}
-  50% {background-position:50% 50%;}
-  100% {background-position:0 50%;}
-} */
 
 /* Réglages du bloc de texte général */
 /* margin-top:20vh;  */
@@ -101,7 +91,7 @@ body {transition:background-color 4s ease; background:linear-gradient(70deg,#FC9
 }
 #wrapper h1 {
   white-space: normal;
-  width: 26%;
+  /* width: 26%; */
   display: inline-block;
   font-size: 2em;
   font-weight: 200;
@@ -151,9 +141,9 @@ h1 span {
   animation: letters 3s ease 2400ms forwards;
 }
 
-.letter10 {
+/* .letter10 {
   animation: letters 3s ease 2700ms forwards;
-}
+} */
 
 .letter11 {
   animation: letters 1s ease 3000ms forwards;

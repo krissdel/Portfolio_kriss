@@ -69,6 +69,7 @@
 </script>
 
 <style scoped>
+
 h1{
   color: rgb(17, 236, 229);
 }

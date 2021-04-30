@@ -32,7 +32,8 @@ export default {
 body {
   background-color: #060b0e;
   font-weight: bold;
-  width: max-content;
+  /* width: max-content; */
+  width: auto;
   /* margin: 0 auto; */
 }
 </style>

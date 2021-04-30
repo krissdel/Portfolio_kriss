@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-  <SoftSkills msg="Christian DELORME"/>
+  <SoftSkills msg=""/>
   </div>
 </template>
 
