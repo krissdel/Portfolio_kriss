@@ -101,7 +101,7 @@ body {transition:background-color 4s ease; background:linear-gradient(70deg,#FC9
 }
 #wrapper h1 {
   white-space: normal;
-  width: 35%;
+  width: 26%;
   display: inline-block;
   font-size: 2em;
   font-weight: 200;
