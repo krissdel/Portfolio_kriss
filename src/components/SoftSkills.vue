@@ -84,10 +84,11 @@ export default {
 
 
 /* Réglages du bloc de texte général */
-/* margin-top:20vh;  */
 #wrapper {
   text-align: center;
   font-family: "Libre Baskerville", serif;
+  /* margin-top:20vh;  */
+
 }
 #wrapper h1 {
   white-space: normal;
@@ -95,15 +96,8 @@ export default {
   display: inline-block;
   font-size: 2em;
   font-weight: 200;
-  background: linear-gradient(
-    75deg,
-    #e5e0f9,
-    #c5c7db,
-    #eaedf3,
-    #c5d2db,
-    #e0f6f9
-  );
   color: #11ece5;
+  text-shadow: #11ece5 1px 0 10px;
   background-clip: text;
   -webkit-background-clip: text;
   position: relative;
@@ -206,20 +200,14 @@ h1::after {
 }
 /* ------------------------ */
 
-/* h1 {animation:textAnimated 60s ease;} 
-@keyframes textAnimated {
 
-0% {background:linear-gradient(70deg,#fdcdcd,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:-12em 0; background-clip:text; -webkit-background-clip:text; color:#11ece5;}
-  50% {background:linear-gradient(85deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:0 0; background-clip:text; -webkit-background-clip:text; color:#11ece5;}
- 100% {background:linear-gradient(70deg,#FDD9CD,#E3BCB8,#FAD6DB,#E3B8D3,#F9CDFD); background-position:-12em; background-clip:text; -webkit-background-clip:text; color:#11ece5;}
- } */
 
-/* h1::before {content:"Christian Delorme"; display:block; position:absolute; width:100%; animation:scintillement 5s ease-in 5s infinite;}
+/* h1::before {content:"Christian Delorme"; color:transparent; display:block; position:absolute; width:100%; animation:scintillement 5s ease-in 7s infinite;}
 @keyframes scintillement {
-	0% {background:linear-gradient(45deg, rgb(245, 247, 245),rgb(245, 247, 245)) no-repeat; background-clip:text; background-position:-12em 0;}
-	25% {background:linear-gradient(75deg, rgb(245, 247, 245),rgb(245, 247, 245)) no-repeat; background-clip:text; background-position:12em 0;}
-	30% {background:linear-gradient(45deg, rgba(255,255,255,0), rgba(200,200,200,0)) no-repeat; background-clip:text; background-position:0 0;}
+	0% {background:radial-gradient(circle farthest-side at -2em -4em, rgba(229,214,2242,0) 99%, rgba(229,214,2242,.8) 99%, rgba(229,214,2242,0) 100%) no-repeat; background-position:-10em 0;}
+	10% {background:radial-gradient(circle farthest-side at -2em -4em, rgba(229,214,2242,0) 99%, rgba(229,214,2242,.8) 99%, rgba(229,214,2242,0) 100%) no-repeat; background-position:5em 0;}
 } */
+
 
 /* *********************************************** */
 h1 {
