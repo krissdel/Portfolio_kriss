@@ -56,7 +56,9 @@ export default {
         { text: "Sass", value: 200 },
         { text: "HTML", value: 800 },
         { text: "GitHub", value: 10000 },
-        { text: "CSS", value: 100 },
+        { text: "CSS", value: 300 },
+        { text: "NPM", value: 200 },
+        { text: "BEM", value: 400 },
       ],
       fontSizeMapper: (word) => Math.log2(word.value) * 5,
     };
@@ -82,13 +84,11 @@ export default {
 
 /* *************************************************** */
 
-
 /* Réglages du bloc de texte général */
 #wrapper {
   text-align: center;
   font-family: "Libre Baskerville", serif;
   /* margin-top:20vh;  */
-
 }
 #wrapper h1 {
   white-space: normal;
@@ -108,57 +108,57 @@ h1 span {
   opacity: 0;
 }
 .letter01 {
-  animation: letters 3s ease 0000ms forwards;
+  animation: letters 1s ease 0000ms forwards;
 }
 .letter02 {
-  animation: letters 3s ease 0300ms forwards;
+  animation: letters 1s ease 0200ms forwards;
 }
 .letter03 {
-  animation: letters 3s ease 600ms forwards;
+  animation: letters 1s ease 0400ms forwards;
 }
 .letter04 {
-  animation: letters 3s ease 900ms forwards;
+  animation: letters 1s ease 0600ms forwards;
 }
 .letter05 {
-  animation: letters 3s ease 1200ms forwards;
+  animation: letters 1s ease 0800ms forwards;
 }
 .letter06 {
-  animation: letters 3s ease 1500ms forwards;
+  animation: letters 1s ease 1000ms forwards;
 }
 .letter07 {
-  animation: letters 3s ease 1800ms forwards;
+  animation: letters 1s ease 1200ms forwards;
 }
 .letter08 {
-  animation: letters 3s ease 2100ms forwards;
+  animation: letters 1s ease 1400ms forwards;
 }
 .letter09 {
-  animation: letters 3s ease 2400ms forwards;
+  animation: letters 1s ease 1600ms forwards;
 }
 
 /* .letter10 {
-  animation: letters 3s ease 2700ms forwards;
+  animation: letters 1s ease 1800ms forwards;
 } */
 
 .letter11 {
-  animation: letters 1s ease 3000ms forwards;
+  animation: letters 1s ease 2000ms forwards;
 }
 .letter12 {
-  animation: letters 1s ease 3300ms forwards;
+  animation: letters 1s ease 2200ms forwards;
 }
 .letter13 {
-  animation: letters 1s ease 3600ms forwards;
+  animation: letters 1s ease 2400ms forwards;
 }
 .letter14 {
-  animation: letters 1s ease 3900ms forwards;
+  animation: letters 1s ease 2600ms forwards;
 }
 .letter15 {
-  animation: letters 1s ease 4200ms forwards;
+  animation: letters 1s ease 2800ms forwards;
 }
 .letter16 {
-  animation: letters 1s ease 4500ms forwards;
+  animation: letters 1s ease 3000ms forwards;
 }
 .letter17 {
-  animation: letters 1s ease 4800ms forwards;
+  animation: letters 1s ease 3200ms forwards;
 }
 
 @keyframes letters {
@@ -186,7 +186,7 @@ h1::after {
   width: 0%;
   opacity: 0;
   margin-top: 0.2em;
-  animation: lineWidth 7s ease-in-out forwards;
+  animation: lineWidth 4s ease-in-out forwards;
 }
 @keyframes lineWidth {
   0% {
@@ -200,14 +200,11 @@ h1::after {
 }
 /* ------------------------ */
 
-
-
 /* h1::before {content:"Christian Delorme"; color:transparent; display:block; position:absolute; width:100%; animation:scintillement 5s ease-in 7s infinite;}
 @keyframes scintillement {
 	0% {background:radial-gradient(circle farthest-side at -2em -4em, rgba(229,214,2242,0) 99%, rgba(229,214,2242,.8) 99%, rgba(229,214,2242,0) 100%) no-repeat; background-position:-10em 0;}
 	10% {background:radial-gradient(circle farthest-side at -2em -4em, rgba(229,214,2242,0) 99%, rgba(229,214,2242,.8) 99%, rgba(229,214,2242,0) 100%) no-repeat; background-position:5em 0;}
 } */
-
 
 /* *********************************************** */
 h1 {

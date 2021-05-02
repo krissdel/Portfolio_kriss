@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <NavBar />
-      <SoftSkills msg="Christian DELORME "/>
+      <!-- <SoftSkills msg="Christian DELORME "/> -->
 
     <router-view />
   </div>
@@ -32,8 +32,8 @@ export default {
 body {
   background-color: #060b0e;
   font-weight: bold;
-  width: max-content;
+  /* width: max-content; */
   width: auto;
-  margin: 0 auto;
+  /* margin: 0 auto; */
 }
 </style>
