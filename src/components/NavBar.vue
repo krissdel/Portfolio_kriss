@@ -122,7 +122,7 @@ export default {
   background: #0f1724;
   /* background: #181818; */
   /* border-color: red; */
-  width: 60px;
+  width: 80px;
   height: 100%;
   position: fixed;
   top: 0;
@@ -135,7 +135,7 @@ export default {
 }
 .nav_bar_icons {
   background: #181818;
-  width: 60px;
+  width: 80px;
   height: 100%;
   position: fixed;
   top: 0;

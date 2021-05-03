@@ -11,8 +11,8 @@
 <script>
 document.onmousemove = animatedCircles;
 
-        const colors = ['#11ece5', '#11ece5', '#11ece5'];
-
+        const colors = ['#11ece5'];
+// '#1b63d6'
         function animatedCircles(event) {
             let circle = document.createElement('div');
             circle.setAttribute('class', 'circle');
@@ -24,13 +24,13 @@ document.onmousemove = animatedCircles;
             let color = colors[Math.floor(Math.random() * colors.length)];
             circle.style.borderColor = color;
 
-            circle.style.transition = 'all 0.5s linear 0s';
+            circle.style.transition = 'all 1s linear 0s';
 
             circle.style.left = circle.offsetLeft - 100 + 'px';
             circle.style.top = circle.offsetTop - 100 + 'px';
 
-            circle.style.width = '10px';
-            circle.style.height = '10px';
+            circle.style.width = '50px';
+            circle.style.height = '50px';
             circle.style.borderWidth = '5px';
             circle.style.opacity = 0;
         }
@@ -40,10 +40,10 @@ document.onmousemove = animatedCircles;
   
 </script>
 
-<style>
+<style >
 .circle {
-            width: 5px;
-            height: 5px;
+            width: 15px;
+            height: 15px;
             border: 1px solid #11ece5;
             position: absolute;
             border-radius: 15px;
