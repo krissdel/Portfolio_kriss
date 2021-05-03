@@ -119,7 +119,8 @@ export default {
 /* ====================================================== */
 
 #nav_bar {
-  background: #181818;
+  background: #0f1724;
+  /* background: #181818; */
   /* border-color: red; */
   width: 60px;
   height: 100%;

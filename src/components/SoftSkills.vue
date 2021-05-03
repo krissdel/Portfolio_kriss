@@ -59,7 +59,11 @@ export default {
         { text: "CSS", value: 300 },
         { text: "NPM", value: 200 },
         { text: "BEM", value: 400 },
+        
       ],
+      // margin : {top: 500, right: 500, bottom: 500, left: 500},
+    
+      
       fontSizeMapper: (word) => Math.log2(word.value) * 5,
     };
   },
