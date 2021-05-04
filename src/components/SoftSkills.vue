@@ -92,19 +92,20 @@ export default {
 #wrapper {
   text-align: center;
   font-family: "Libre Baskerville", serif;
-  /* margin-top:20vh;  */
+  margin-top: 10vh; 
 }
 #wrapper h1 {
   white-space: normal;
   /* width: 26%; */
   display: inline-block;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 200;
   color: #11ece5;
   text-shadow: #11ece5 1px 0 10px;
   background-clip: text;
   -webkit-background-clip: text;
   position: relative;
+  margin-top: 10vh;
 }
 
 /* Animations des lettres */
@@ -202,7 +203,7 @@ h1::after {
     opacity: 1;
   }
 }
-/* ------------------------ */
+/* ---------[scintillement]--------------- */
 
 /* h1::before {content:"Christian Delorme"; color:transparent; display:block; position:absolute; width:100%; animation:scintillement 5s ease-in 7s infinite;}
 @keyframes scintillement {
@@ -270,6 +271,38 @@ h1 {
   margin-left: 80vw;
   margin-top: 21vh;
 }
+
+/* -----[keyword cloud]------------------------- */
+/* 
+#tagsphere {
+  background: url("/images/background.png") top center no-repeat;
+  height: 230px;
+  width: 380px;
+  padding: 10px;
+  margin: 10px;
+  margin: 0 auto;
+}
+ul li a,
+ul li a:visited {
+  color: #e29154;
+  font-weight: bold;
+  text-decoration: none;
+}
+ul li a:hover,
+ul li.link1 a:hover,
+ul li.link2 a:hover,
+ul li.link3 a:hover {
+  color: #4eb6bf;
+}
+ul li.link1 a {
+  color: #d8b596;
+}
+ul li.link2 a {
+  color: #eaaf84;
+}
+ul li.link3 a {
+  color: #ff8000;
+} */
 
 /* -----[button soft skills]--------------- */
 
@@ -355,35 +388,4 @@ h1 {
   }
 } */
 
-/* -----[keyword cloud]------------------------- */
-
-#tagsphere {
-  background: url("/images/background.png") top center no-repeat;
-  height: 230px;
-  width: 380px;
-  padding: 10px;
-  margin: 10px;
-  margin: 0 auto;
-}
-ul li a,
-ul li a:visited {
-  color: #e29154;
-  font-weight: bold;
-  text-decoration: none;
-}
-ul li a:hover,
-ul li.link1 a:hover,
-ul li.link2 a:hover,
-ul li.link3 a:hover {
-  color: #4eb6bf;
-}
-ul li.link1 a {
-  color: #d8b596;
-}
-ul li.link2 a {
-  color: #eaaf84;
-}
-ul li.link3 a {
-  color: #ff8000;
-}
 </style>
