@@ -46,7 +46,7 @@
           id="floatingTextarea2"
           style="height: 100px"
         ></textarea>
-        <!-- <label for="floatingTextarea2">Comments</label> -->
+        <label for="floatingTextarea2">Comments</label>
       </div>
     </div>
     <div class="col-btn">
@@ -55,7 +55,7 @@
 
 
     <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-    <cloud :data="words" :fontSizeMapper="fontSizeMapper" />
+    <!-- <cloud :data="words" :fontSizeMapper="fontSizeMapper" /> -->
 
     <div>
       <span class="tags4"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
@@ -68,12 +68,12 @@
 
 <script>
 // import Map from '@/components/Map.vue'
-// export default {
-//   name: 'Contact',
-//   components: {
-//     Map,
-//   }
-// }
+export default {
+  name: 'Contact',
+  components: {
+    // Map,
+  }
+}
 </script>
 
 <style scoped>

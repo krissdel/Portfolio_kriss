@@ -171,7 +171,7 @@ h1 {
 }
 
 .project-listing:hover {
-  transform: translate(0, -1.5rem) rotate(-3deg) scale(1.3);
+  transform: translate(0, -2.5rem) rotate(-3deg) scale(1.3);
 }
 .project-title {
   font-size: 2rem;

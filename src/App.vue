@@ -33,7 +33,13 @@ body {
   background-color: #060b0e;
   font-weight: bold;
   /* width: max-content; */
-  width: auto;
+  /* width: auto; */
   /* margin: 0 auto; */
+    /* flex-direction: initial;
+    display: flex;
+    flex-wrap: wrap;
+    width: 723px;
+    max-width: 900px;
+    margin: auto; */
 }
 </style>
