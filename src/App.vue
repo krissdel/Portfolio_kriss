@@ -9,13 +9,15 @@
 
 <script>
 import NavBar from "./components/NavBar.vue";
+// import Map from './components/Map.vue'
 
 
 export default {
-  name: "app",
+  name: "App",
  
   components: {
-    NavBar,  
+    NavBar,
+    // Map  
   },
 };
 </script>

@@ -1,5 +1,6 @@
 <template>
   <div class="container">
+    <div class="container_contact">
     <div id="contact">
       <h1>
         <span class="letter01">C</span><span class="letter02">o</span
@@ -52,28 +53,29 @@
     <div class="col-btn">
       <input class="btn btn-primary" type="submit" value="Send" />
     </div>
+  </div>
+    <!-- =====[google Map]========================= -->
+    <Map />
 
-
-    <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
+    <!-- ================================ -->
+    <!-- <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span> -->
     <!-- <cloud :data="words" :fontSizeMapper="fontSizeMapper" /> -->
 
-    <div>
+    <!-- <div>
       <span class="tags4"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-    </div>
-    <span class="tags6"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-
-    <!-- <Map /> -->
+    </div> -->
+    <!-- <span class="tags6"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span> -->
   </div>
 </template>
 
 <script>
-// import Map from '@/components/Map.vue'
+import Map from "@/components/Map.vue";
 export default {
-  name: 'Contact',
+  name: "Contact",
   components: {
-    // Map,
-  }
-}
+    Map,
+  },
+};
 </script>
 
 <style scoped>
@@ -84,6 +86,11 @@ h1 {
   max-width: 800px;
   padding-top: 5pc;
   width: fit-content;
+  /* display: flex; */
+  width: auto;
+}
+.container_contact {
+    margin-bottom: 10pc;
 }
 .col {
   padding-bottom: 5pc;
@@ -110,7 +117,6 @@ label {
   width: 13pc;
 }
 .btn-primary:hover {
- 
   background-color: #11ece5;
 }
 
@@ -159,7 +165,7 @@ label {
   top: 0;
   display: flex;
   color: #515152;
-  margin-left: 80vw;
+  /* margin-left: 80vw; */
   margin-top: 21vh;
 }
 
