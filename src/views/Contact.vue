@@ -58,7 +58,7 @@
     <Map />
 
     <!-- ================================ -->
-    <!-- <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span> -->
+    <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
     <!-- <cloud :data="words" :fontSizeMapper="fontSizeMapper" /> -->
 
     <!-- <div>
@@ -155,7 +155,7 @@ label {
   top: 0;
   display: flex;
   color: #515152;
-  margin-left: 66vw;
+  /* margin-left: 66vw; */
   margin-top: 21vh;
 }
 .tags6 {

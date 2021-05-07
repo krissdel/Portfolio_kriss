@@ -7,8 +7,8 @@ Vue.config.productionTip = false
 
 Vue.use(VueGoogleMaps, {
   load: {
-    key: '',
-    // libraries: 'places',
+    key: 'AIzaSyDvmZL_-Vr3zl4qvtmGFjBNRULS-e9C-Cw',
+    libraries: 'Christian DELORME',
   }
 });
 
