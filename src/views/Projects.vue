@@ -306,7 +306,7 @@ h1::after {
     #11ece5,
     #11ece5
   );
-  height: 0.5px;
+  height: 1px;
   box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
   width: 0%;
   opacity: 0;

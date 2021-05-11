@@ -1,7 +1,8 @@
 <template>
   <div id="app">
+    <Sound />
     <NavBar />
-      <!-- <SoftSkills msg="Christian DELORME "/> -->
+    <!-- <SoftSkills msg="Christian DELORME "/> -->
 
     <router-view />
   </div>
@@ -9,18 +10,21 @@
 
 <script>
 import NavBar from "./components/NavBar.vue";
-// import Map from './components/Map.vue'
+import Sound from "./components/Sound.vue";
 
+// import Map from './components/Map.vue'
 
 export default {
   name: "App",
- 
+
   components: {
     NavBar,
-    // Map  
+    Sound,
+    // Map
   },
 };
 </script>
+
 
 <style>
 #app {
@@ -37,7 +41,7 @@ body {
   /* width: max-content; */
   /* width: auto; */
   /* margin: 0 auto; */
-    /* flex-direction: initial;
+  /* flex-direction: initial;
     display: flex;
     flex-wrap: wrap;
     width: 723px;

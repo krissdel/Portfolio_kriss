@@ -7,13 +7,19 @@
      <GmapMap
       :center='center'
       :zoom='12'
+     
       style='width:100%;  height: 400px;'
     />
+     <!-- map = new google.maps.Map(document.getElementById('map'), {
+  center: {lat: -34.397, lng: 150.644},
+  zoom: 8,
+  mapId: '90d36726a2e98a86'}); -->
   </div>
 </template>
 
 <script>
 // import { defineComponent } from 'vue'
+
 
 export default {
     name: "Map",
@@ -21,7 +27,10 @@ export default {
     return {
       center: { lat: 48.97819900512695, lng: 1.8114213943481445 },
     }
+    
   },
+
+  
   //  mounted() {
   //   this.geolocate();
   // },

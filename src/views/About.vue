@@ -3,7 +3,7 @@
 <template>
   <!-- <div class="about"> -->
      <div class="hello">
-    <K2000 />
+    <!-- <K2000 /> -->
     
     <img src="../assets/moi.png" alt="Image moi" class="img" />
  <h2>I'm christian Delorme </h2>
@@ -35,14 +35,14 @@
 </template>
 
 <script>
-import K2000 from '@/components/K2000.vue'
+// import K2000 from '@/components/K2000.vue'
 import TagsBall from '@/components/TagsBall.vue'
 
 export default {
   name: "about",
 
   components: {
-    K2000,
+    // K2000,
     TagsBall
   },
   props: {
@@ -53,14 +53,15 @@ export default {
 
 
 <style scoped>
-h1 {
+/* h1 {
  color: rgb(17, 236, 229);
-}
+} */
 img {
   vertical-align: middle;
   /* border-style: none; */
   max-width: 125px;
   border-image: linear-gradient(#f6b73c, #4d9f0c) 30;
+  margin-top: 21vh;
 }
 
 /* --------[gliph]-------------------------- */

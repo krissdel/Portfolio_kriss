@@ -98,9 +98,9 @@ export default {
   white-space: normal;
   /* width: 26%; */
   display: inline-block;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 200;
-  color: #11ece5;
+  color: #11ece5; 
   text-shadow: #11ece5 1px 0 10px;
   background-clip: text;
   -webkit-background-clip: text;
@@ -175,34 +175,15 @@ h1 span {
   }
 }
 /* -----[souslignage]---------------------------------------- */
-h1::after {
-  content: "";
-  display: block;
-  background: linear-gradient(
-    45deg,
-    #11ece5,
-    #11ece5,
-    #11ece5,
-    #11ece5,
-    #11ece5
-  );
-  height: 0.5px;
-  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
-  width: 0%;
-  opacity: 0;
-  margin-top: 0.2em;
-  animation: lineWidth 4s ease-in-out forwards;
-}
+
+h1::after {content:""; display:block; background:linear-gradient(45deg, #11ece5,
+    #11ece5,#11ece5,#11ece5,#11ece5); height:2px; box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px; width:0%; opacity:0; margin-top:.2em; animation:lineWidth 4s ease-in-out forwards;}
 @keyframes lineWidth {
-  0% {
-    width: 0%;
-    opacity: 0;
-  }
-  100% {
-    width: 100%;
-    opacity: 1;
-  }
+	0% {width:0%; opacity:0;}
+	100% {width:100%; opacity:1.0;}
 }
+
+
 /* ---------[scintillement]--------------- */
 
 /* h1::before {content:"Christian Delorme"; color:transparent; display:block; position:absolute; width:100%; animation:scintillement 5s ease-in 7s infinite;}

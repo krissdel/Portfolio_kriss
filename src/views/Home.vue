@@ -2,7 +2,7 @@
   <div class="home">
     
     <SoftSkills msg="" />
-    <MouseMove />
+    <!-- <MouseMove /> -->
 
   </div>
 </template>
@@ -11,14 +11,14 @@
 // @ is an alias to /src
 
 import SoftSkills from "@/components/SoftSkills.vue";
-import MouseMove from "@/components/MouseMove.vue";
+// import MouseMove from "@/components/MouseMove.vue";
 
 
 export default {
   name: "home",
   components: {
     SoftSkills,
-    MouseMove,
+    // MouseMove,
   },
 };
 </script>
