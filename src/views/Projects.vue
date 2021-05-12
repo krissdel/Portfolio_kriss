@@ -255,6 +255,8 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   position: relative;
+    margin-top: 2vh;
+
 }
 
 /* Animations des lettres */

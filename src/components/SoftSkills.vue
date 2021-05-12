@@ -98,14 +98,15 @@ export default {
   white-space: normal;
   /* width: 26%; */
   display: inline-block;
-  font-size: 2em;
+  font-size: 3em;
   font-weight: 200;
   color: #11ece5; 
   text-shadow: #11ece5 1px 0 10px;
   background-clip: text;
   -webkit-background-clip: text;
   position: relative;
-  margin-top: 10vh;
+  /* margin-top: 10vh; */
+  margin-top: 2vh;
 }
 
 /* Animations des lettres */
@@ -184,19 +185,10 @@ h1::after {content:""; display:block; background:linear-gradient(45deg, #11ece5,
 }
 
 
-/* ---------[scintillement]--------------- */
-
-/* h1::before {content:"Christian Delorme"; color:transparent; display:block; position:absolute; width:100%; animation:scintillement 5s ease-in 7s infinite;}
-@keyframes scintillement {
-	0% {background:radial-gradient(circle farthest-side at -2em -4em, rgba(229,214,2242,0) 99%, rgba(229,214,2242,.8) 99%, rgba(229,214,2242,0) 100%) no-repeat; background-position:-10em 0;}
-	10% {background:radial-gradient(circle farthest-side at -2em -4em, rgba(229,214,2242,0) 99%, rgba(229,214,2242,.8) 99%, rgba(229,214,2242,0) 100%) no-repeat; background-position:5em 0;}
-} */
-
 /* *********************************************** */
 h1 {
   font-family: "Libre Baskerville", serif;
   color: rgb(17, 236, 229);
-  /* padding-left: 60px; */
 }
 .tags1 {
   font-size: 20px;
@@ -215,14 +207,6 @@ h1 {
   justify-content: flex-end;
   color: #515152;
 }
-/* .tags3 {
-  font-size: 20px;
-  font-family: "La Belle Aurore", cursive;
-  top: 0;
-  color: #515152;
-   margin-left: -29vw;
-  margin-top: 21vh;
-} */
 .tags4 {
   font-size: 20px;
   font-family: "La Belle Aurore", cursive;

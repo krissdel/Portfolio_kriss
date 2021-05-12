@@ -1,88 +1,109 @@
 <template>
-   <!-- <figure>
-    <audio
-        controls
-        src="./audio/remember to breathe.mp3">
-    </audio>
-</figure> -->
+  <div>
 
-    
-    
-    <!-- <button type="button" class="btn btn-white btn- animate">play sound</button> -->
-     
-     
-     
-     <div class="text-box">
-      <a href="#" class="btn btn-white btn- animate"><span style="font-size: 1.5em; color: white">
-          <i class="fas fa-music"></i>
-        </span></a>
+
+    <!-- <figure>
+      <audio controls src="../audio/music.mp3"></audio>
+    </figure> -->
+
+    <!-- <div class="text-box"> -->
+
+    <!-- <button class="sound"
+        ><span style="font-size: 1.5em; color: white">
+          <i class="fas fa-music"></i></span
+      ></button> -->
+
+    <div v-if="musicPlayed">
+      <button @click="!playMusic()" class="btn">
+        <span style="font-size: 1.5em; color: white">
+          <i class="fas fa-music"></i
+        ></span>
+      </button>
     </div>
+    <button v-if="!musicPlayed" @click="playMusic()" class="btn">
+      <span style="font-size: 1.5em; color: red">
+        <i class="fas fa-music"></i>
+      </span>
+    </button>
+
+    <!-- </div> -->
+  </div>
 </template>
 
 <script>
-// var myTrack = new audio('audio/remember to breathe.mp3')
-
-
 export default {
-name: "Sound",
-}
+  name: "Sound",
+  data() {
+    return { musicPlayed: true };
+
+  },
+  methods: {    
+    playMusic() {
+      var myTrack = new Audio("../audio/music.mp3");
+      console.log(myTrack);
+
+
+      if (this.musicPlayed == false) {
+        myTrack.load();
+        myTrack.play();
+        
+        this.musicPlayed = true;
+      } else {
+        myTrack.pause();
+        myTrack.currentTime = 0;
+        this.musicPlayed = false;
+      }
+    },
+  },
+};
 </script>
 
 <style>
-/* -----[button soft skills]--------------- */
+/* -----[button sound]--------------- */
 
-  a.btn.btn-white.btn-.animate {
-  font-family: "Libre Baskerville", serif;
+.btn {
   border-color: rgb(17, 236, 229);
-background: rgb(17, 236, 229); 
- box-shadow: rgb(17 236 229) 0px 0px 6px 0.4px;
-} 
- /* .btn-animate {
-  font-family: "Libre Baskerville", serif;
-  border-color: rgb(17, 236, 229);
-background: rgb(17, 236, 229); 
- box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
-}  */
+  background: rgb(17, 236, 229);
+  box-shadow: rgb(17 236 229) 0px 0px 6px 0.4px;
+  border-radius: 100px;
+}
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
 
- /* body {
+/* body {
   background-color: #060b0e;
   font-weight: bold;
   width: 900px;
 }  */
- 
+
 /* .text-box {
   margin-left: -11vw;
   margin-top: 21vh;
  
 } */
 
-.btn:link,
+/* .btn:link,
 .btn:visited {
-  text-transform: uppercase;
-  text-decoration: none;
-  /* padding: 15px 40px; */
+  padding: 15px 40px;
   display: inline-block;
   border-radius: 100px;
   transition: all 0.2s;
   position: absolute;
-}
+} */
 
-.btn:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.btn:active {
+/* .btn:active {
   transform: translateY(-1px);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-}
+} */
 
 /* .btn-white {
   background-color: #ffffff;
   color: #777;
 } */
 
-.btn::after {
+/* .btn::after {
   content: "";
   display: inline-block;
   height: 100%;
@@ -93,23 +114,23 @@ background: rgb(17, 236, 229);
   left: 0;
   z-index: -1;
   transition: all 0.4s;
-}
+} */
 
-.btn-white::after {
+/* .btn-white::after {
   background-color: #fff;
-}
+} */
 
-.btn:hover::after {
+/* .btn:hover::after {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
-}
+} */
 
-.btn-animated {
+/* .btn-animated {
   animation: moveInBottom 5s ease-out;
   animation-fill-mode: backwards;
-}
+} */
 
-@keyframes moveInBottom {
+/* @keyframes moveInBottom {
   0% {
     opacity: 0;
     transform: translateY(30px);
@@ -119,5 +140,5 @@ background: rgb(17, 236, 229);
     opacity: 1;
     transform: translateY(0px);
   }
-} 
+} */
 </style>

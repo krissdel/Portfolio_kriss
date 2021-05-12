@@ -1,59 +1,59 @@
 <template>
   <div class="container">
     <div class="container_contact">
-    <div id="contact">
-      <h1>
-        <span class="letter01">C</span><span class="letter02">o</span
-        ><span class="letter03">n</span><span class="letter04">t</span
-        ><span class="letter05">a</span><span class="letter06">c</span
-        ><span class="letter07">t</span>
-      </h1>
-    </div>
+      <div id="contact">
+        <h1>
+          <span class="letter01">C</span><span class="letter02">o</span
+          ><span class="letter03">n</span><span class="letter04">t</span
+          ><span class="letter05">a</span><span class="letter06">c</span
+          ><span class="letter07">t</span>
+        </h1>
+      </div>
 
-    <div class="tags">
-      <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>
-      <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
+      <div class="tags">
+        <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>
+        <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
+      </div>
+      <div class="row">
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="First name"
+            aria-label="First name"
+          />
+        </div>
+        <div class="col">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Last name"
+            aria-label="Last name"
+          />
+        </div>
+        <div class="col">
+          <label for="inputEmail4" class="form-label"></label>
+          <input
+            type="email"
+            class="form-control"
+            id="inputEmail4"
+            placeholder="Email"
+          />
+        </div>
+        <div class="col">
+          <textarea
+            class="form-control"
+            placeholder="Leave a message here"
+            id="floatingTextarea2"
+            style="height: 100px"
+          ></textarea>
+          <label for="floatingTextarea2">Comments</label>
+        </div>
+      </div>
+      <div class="col-btn">
+        <input class="btn btn-primary" type="submit" value="Send" />
+      </div>
     </div>
-    <div class="row">
-      <div class="col">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="First name"
-          aria-label="First name"
-        />
-      </div>
-      <div class="col">
-        <input
-          type="text"
-          class="form-control"
-          placeholder="Last name"
-          aria-label="Last name"
-        />
-      </div>
-      <div class="col">
-        <label for="inputEmail4" class="form-label"></label>
-        <input
-          type="email"
-          class="form-control"
-          id="inputEmail4"
-          placeholder="Email"
-        />
-      </div>
-      <div class="col">
-        <textarea
-          class="form-control"
-          placeholder="Leave a message here"
-          id="floatingTextarea2"
-          style="height: 100px"
-        ></textarea>
-        <label for="floatingTextarea2">Comments</label>
-      </div>
-    </div>
-    <div class="col-btn">
-      <input class="btn btn-primary" type="submit" value="Send" />
-    </div>
-  </div>
     <!-- =====[google Map]========================= -->
     <Map />
 
@@ -89,7 +89,7 @@ h1 {
   width: auto;
 }
 .container_contact {
-    margin-bottom: 10pc;
+  margin-bottom: 10pc;
 }
 .col {
   padding-bottom: 5pc;
@@ -188,6 +188,7 @@ label {
   background-clip: text;
   -webkit-background-clip: text;
   position: relative;
+  margin-top: 2vh;
 }
 
 /* Animations des lettres */
