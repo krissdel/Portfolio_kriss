@@ -1,7 +1,5 @@
 <template>
   <div>
-
-
     <!-- <figure>
       <audio controls src="../audio/music.mp3"></audio>
     </figure> -->
@@ -13,14 +11,14 @@
           <i class="fas fa-music"></i></span
       ></button> -->
 
-    <div v-if="musicPlayed">
-      <button @click="!playMusic()" class="btn">
+    <!-- <div>
+      <button v-if="musicPlayed" @click="playMusic()" class="btn">
         <span style="font-size: 1.5em; color: white">
           <i class="fas fa-music"></i
         ></span>
       </button>
-    </div>
-    <button v-if="!musicPlayed" @click="playMusic()" class="btn">
+    </div> -->
+    <button @click="playMusic()" class="btn">
       <span style="font-size: 1.5em; color: red">
         <i class="fas fa-music"></i>
       </span>
@@ -33,29 +31,75 @@
 <script>
 export default {
   name: "Sound",
-  data() {
-    return { musicPlayed: true };
+    // data() {
+    //   return { musicPlayed: true };
+    // },
 
-  },
-  methods: {    
+  methods: {
     playMusic() {
-      var myTrack = new Audio("../audio/music.mp3");
-      console.log(myTrack);
+      //   console.log(this.musicPlayed);
+      let myTrack = new Audio(require("../audio/music.mp3"));
+      let musicPlayed = false;
 
-
-      if (this.musicPlayed == false) {
-        myTrack.load();
+      if (musicPlayed == false) {
         myTrack.play();
-        
-        this.musicPlayed = true;
-      } else {
+
+        console.log(myTrack);
+        console.log(musicPlayed);
+        console.log("myTrack", typeof myTrack);
+        console.log("musicPlayed", typeof musicPlayed);
+
+      } else (musicPlayed !== false); {
+        //    let musicPlayed = false;
+        console.log("hjklkjh");
         myTrack.pause();
         myTrack.currentTime = 0;
-        this.musicPlayed = false;
+// console.log(musicPlayed)
+        console.log("myTrack2", typeof myTrack);
       }
     },
   },
 };
+//  if(this.musicPlayed){
+//       setTimeout(function () {
+//     myTrack.play();
+// }, 150);
+
+//  }
+//  else{
+//      myTrack.pause();
+//  }
+
+//       if (playPromise) {
+
+//       myTrack.play();
+
+//         console.log(myTrack.play);
+//    }
+
+//   if (this.musicPlayed=== false) {
+
+//          myTrack.pause();
+//      myTrack.currentTime = 0;
+
+//            }
+//   else if (this.musicPlayed !== false) {
+//     myTrack.pause();
+//     myTrack.currentTime = 0;
+//     this.musicPlayed = false;
+//   }
+// },
+//   },
+
+//  methods: {
+//     playMusic () {
+//       if(musicPlayed) {
+//         var myTrack = new Audio("../audio/music.mp3");
+//         myTrack.play();
+//       }
+//     }
+//   }
+// };
 </script>
 
 <style>
