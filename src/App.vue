@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    
     <Sound />
     <NavBar />
     <!-- <SoftSkills msg="Christian DELORME "/> -->
