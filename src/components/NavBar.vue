@@ -17,9 +17,11 @@
         </span>
       </router-link>
       <!-- <b>Skills</b> -->
+      <router-link to="/skills">
       <span style="font-size: 1.5em; color: white">
         <i class="fas fa-eye"></i>
       </span>
+       </router-link>
       <!-- <b>My Projects</b> -->
       <router-link to="/projects">
         <span style="font-size: 1.5em; color: white">
