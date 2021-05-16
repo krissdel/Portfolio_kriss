@@ -1,9 +1,9 @@
 <template>
   <div id="nav_bar">
     <nav class="nav_bar_icons">
-      <!-- <router-link to="/"> -->
+      <router-link to="/">
         <img src="../assets/Ellipse 1.png" alt="Image logo" class="img" />
-      <!-- </router-link> -->
+      </router-link>
       <!-- <b>Home</b> -->
       <router-link to="/">
         <span style="font-size: 1.5em; color: white">
@@ -150,6 +150,7 @@ export default {
 }
 .img {
   padding: 10px;
+  height: 40px;
 }
 /* =====[icones hover]============================ */
 .nav ul {

@@ -1,16 +1,16 @@
 <template>
  <div>
-      <h1>tagsBall</h1>
+      <!-- <h1>tagsBall</h1>
 <div class="jquery-script-clear"></div>
 
 
 <div id='tag-cloud'></div>
 
   </div>
-</template>
+</template> -->
 
 <script>
-// import JQuery from 'jquery'
+<!-- // import JQuery from 'jquery'
 // window.$ = JQuery
 import $ from 'jquery'
 
@@ -79,7 +79,7 @@ import $ from 'jquery'
 
 export default {
 name: "TagsBall",
-}
+} -->
 </script>
 
 <style>
