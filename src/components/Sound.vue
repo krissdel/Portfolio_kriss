@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="sound">
     <!-- <div class="controls"> -->
     <!-- <button class="btn" v-if="!isPlaying" @click="play">
       <span style="font-size: 1.5em; color: red">
@@ -13,6 +13,8 @@
       ></span>
     </button> -->
     <!-- </div> -->
+<!-- -------------------------------------- -->
+
 
     <button
       class="btn"
@@ -32,47 +34,11 @@
 <script>
 export default {
   name: "Sound",
-
-  // ----------------------------------------------------
-  //   data() {
-  //     return {
-  //       current: {},
-  //       index: 0,
-  //       songs: [
-  //         {
-  //           src: require("../assets/audio/music.mp3"),
-  //         },
-  //       ],
-  //       sound: new Audio(),
-  //     };
-  //   },
-  //   methods: {
-  //     play(song) {
-  //       if (typeof song.src != "undefined") {
-  //         this.current = song;
-
-  //         this.sound.src = this.current.src;
-  //       }
-  //       this.sound.play();
-  //       this.isplaying = true;
-  //     },
-  //     pause() {
-  //       this.sound.pause();
-  //       this.sound.currentTime = 0;
-  //       this.isplaying = false;
-  //     },
-  //   },
-  //   created() {
-  //     this.current = this.songs[this.index];
-  //     this.sound.src = this.current.src;
-  //   },
-
-  // ============================
   data() {
     return {
       audios: [
         {
-          id: "muscle-car",
+        //   id: "SOUND",
           // name: 'Muscle Car',
           file: new Audio(require("../assets/audio/SOUND.mp3")),
           isPlaying: false,
@@ -82,11 +48,7 @@ export default {
   },
   methods: {
     play(audio) {
-        // if (audio.isPlaying = true) {
-        //     audio.isPlaying++
-        // }
       audio.isPlaying = true;
-
       audio.file.play();
 // audio.file++
     },
@@ -94,33 +56,18 @@ export default {
     pause(audio) {
       audio.isPlaying = false;
       audio.file.pause();
-      //   audio.file.currentTime = 0;
+        audio.file.currentTime = 0;
     },
   },
-
-  // -------------------------------------------------------------------
-
-  //   methods: {
-  //     play() {
-  //       //   console.log(this.musicPlayed);
-  //       let myTrack = new Audio(require("../assets/audio/music.mp3"));
-  //       this.isPlaying = true;
-  //       myTrack.play();
-  //     },
-  //     pause() {
-  //       let myTrack = this.isPlaying;
-  //       this.isplaying = false;
-  //     //   this.myTrack.pause();
-  //       this.isplaying.pause();
-  //       myTrack.currentTime = 0;
-  //     },
-  //   },
 };
 </script>
 
 <style>
 /* -----[button sound]--------------- */
+.sound {
+    padding-left: 80px;
 
+}
 .btn {
   font-family: "Libre Baskerville", serif;
   border-color: rgb(17, 236, 229);

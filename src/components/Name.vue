@@ -1,5 +1,5 @@
 <template>
-  <div class="hello">
+  <div class="name">
             <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>
 
     <div id="wrapper">
@@ -27,6 +27,10 @@ export default {
 
 
 <style lang="css" scoped>
+.name {
+  padding-left: 80px;
+  padding-bottom: 10pc;
+}
 .tags1 {
   font-size: 20px;
   font-family: "La Belle Aurore", cursive;

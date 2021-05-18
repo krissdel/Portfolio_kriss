@@ -1,14 +1,22 @@
 <template>
   <div class="hello">
+   
     <div class="tags">
       <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
     </div>
+  <!-- -------[parallax effect]------------------- -->
 
+    <kinesis-container>
+      <kinesis-element :strength="30">
+        <cloud :data="words" :fontSizeMapper="fontSizeMapper" />
+      </kinesis-element>
+    </kinesis-container>
+
+    <!-- --------------------------------- -->
+    
     <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-    <cloud :data="words" :fontSizeMapper="fontSizeMapper" />
-    <div>
-      <span class="tags4"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-    </div>
+
+  
     <span class="tags6"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
   </div>
 </template>
@@ -68,7 +76,7 @@ h1 {
   justify-content: flex-end;
   color: #515152;
 }
-.tags4 {
+/* .tags4 {
   font-size: 20px;
   font-family: "La Belle Aurore", cursive;
   display: flex;
@@ -76,7 +84,7 @@ h1 {
   color: #515152;
   margin-left: 18vw;
   margin-top: 21vh;
-}
+} */
 .tags5 {
   font-size: 20px;
   font-family: "La Belle Aurore", cursive;

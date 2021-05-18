@@ -35,7 +35,6 @@
 
     <img src="../assets/moi.png" alt="Image moi" class="img" />
 
-    <!-- <Name /> -->
 
     <div class="tags">
       <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>
@@ -83,7 +82,6 @@
 
     <!-- --------------------- -->
 
-    <!-- <cloud :data="words" :fontSizeMapper="fontSizeMapper" /> -->
 
     <!-- <TagsBall /> -->
   </div>
@@ -91,13 +89,11 @@
 
 <script>
 // import TagsBall from '@/components/TagsBall.vue'
-// import Name from "@/components/Name.vue";
 
 export default {
-  name: "about",
+  name: "home",
 
   components: {
-    // Name,
     // TagsBall
   },
   props: {},
@@ -115,10 +111,6 @@ h1 span {
 .letter02 {
   animation: letters 1s ease 0200ms forwards;
 }
-/* .letter03 {
-  animation: letters 1s ease 0400ms forwards;
-} */
-
 .letter04 {
   animation: letters 1s ease 0600ms forwards;
 }
@@ -268,7 +260,7 @@ body {
   height: 100%;
   overflow-y: scroll;
   overflow-x: hidden;
-  font-family: Nunito;
+ 
 }
 
 p {
@@ -347,7 +339,8 @@ img:last-of-type {
 }
 
 #title {
-  background-image: url("https://lorempixel.com/640/480/abstract/6/");
+  background-image: url("../assets/947346.jpg");
+  /* <img src="../assets/947346.jpg" alt="Image" class="img" /> */
   z-index: 2;
 }
 
@@ -357,17 +350,17 @@ img:last-of-type {
 }
 
 #slide1:before {
-  background-image: url("https://lorempixel.com/640/480/abstract/4/");
+  background-image: url("../assets/blue-technology-background.jpg");
   transform: translateZ(-1px) scale(2);
 }
 
 #slide2 {
-  background-image: url("https://lorempixel.com/640/480/abstract/3/");
+  /* background-image: url("https://lorempixel.com/640/480/abstract/3/"); */
   z-index: 2;
 }
 
 #slide3:before {
-  background-image: url("https://lorempixel.com/640/480/abstract/5/");
+  /* background-image: url("https://lorempixel.com/640/480/abstract/5/"); */
   transform: translateZ(-1px) scale(2);
 }
 
