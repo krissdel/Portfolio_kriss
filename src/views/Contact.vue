@@ -54,26 +54,20 @@
         <input class="btn btn-primary" type="submit" value="Send" />
       </div>
     </div>
-    <!-- =====[google Map]========================= -->
     <Map />
 
-    <!-- ================================ -->
     <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-
-    <!-- <div>
-      <span class="tags4"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-    </div> -->
-    <!-- <span class="tags6"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span> -->
   </div>
 </template>
 
 <script>
 import Map from "@/components/Map.vue";
+
 export default {
   name: "Contact",
   components: {
-    Map,
-  },
+    Map
+  } 
 };
 </script>
 
@@ -87,6 +81,7 @@ h1 {
   width: fit-content;
   /* display: flex; */
   width: auto;
+  padding-left: 80px;
 }
 .container_contact {
   margin-bottom: 10pc;
@@ -106,9 +101,6 @@ label {
   padding-top: 4pc;
 }
 
-/* input.btn.btn-primary {
-    width: 48pc;
-} */
 .btn-primary {
   color: #fff;
   background-color: #4aa19e;
@@ -171,7 +163,7 @@ label {
 /* *******[Animations des lettres ]******************************************** */
 
 /* Réglages du bloc de texte général */
-#contact {
+ #contact {
   text-align: center;
   font-family: "Libre Baskerville", serif;
   margin-top: 10vh;
@@ -179,7 +171,6 @@ label {
 }
 #contact h1 {
   white-space: normal;
-  /* width: 26%; */
   display: inline-block;
   font-size: 3em;
   font-weight: 200;
@@ -189,10 +180,10 @@ label {
   -webkit-background-clip: text;
   position: relative;
   margin-top: 2vh;
-}
+} 
 
 /* Animations des lettres */
-h1 span {
+ h1 span {
   opacity: 0;
 }
 .letter01 {
@@ -224,9 +215,9 @@ h1 span {
   100% {
     opacity: 1;
   }
-}
+} 
 /* -----[souslignage]---------------------------------------- */
-h1::after {
+ h1::after {
   content: "";
   display: block;
   background: linear-gradient(
@@ -253,5 +244,5 @@ h1::after {
     width: 100%;
     opacity: 1;
   }
-}
-</style>>
+} 
+</style>

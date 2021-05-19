@@ -1,10 +1,9 @@
 <template>
-  <div class="hello">
-   
+  <div class="Words">
     <div class="tags">
       <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
     </div>
-  <!-- -------[parallax effect]------------------- -->
+    <!-- -------[parallax effect]------------------- -->
 
     <kinesis-container>
       <kinesis-element :strength="30">
@@ -13,11 +12,9 @@
     </kinesis-container>
 
     <!-- --------------------------------- -->
-    
-    <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
 
-  
-    <span class="tags6"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
+    <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
+    <!-- <span class="tags6"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span> -->
   </div>
 </template>
 
@@ -25,7 +22,7 @@
 import Cloud from "vue-d3-cloud";
 
 export default {
-  name: "Home",
+  name: "words",
   data() {
     return {
       words: [
@@ -76,15 +73,7 @@ h1 {
   justify-content: flex-end;
   color: #515152;
 }
-/* .tags4 {
-  font-size: 20px;
-  font-family: "La Belle Aurore", cursive;
-  display: flex;
-  top: 0;
-  color: #515152;
-  margin-left: 18vw;
-  margin-top: 21vh;
-} */
+
 .tags5 {
   font-size: 20px;
   font-family: "La Belle Aurore", cursive;

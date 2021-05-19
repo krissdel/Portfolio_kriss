@@ -1,8 +1,6 @@
 <template>
   <div class="container_about">
     <Name />
-
-    <!-- -------------------------------- -->
     <div class="container_about_text">
       <div class="container_text">
         <div class="card">
@@ -26,32 +24,27 @@
         </div>
       </div>
     </div>
-
-    <!-- <p class="text_about">let's make something special...</p> -->
-
-    <!-- <MouseMove /> -->
+    <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
   </div>
 </template>
 
 <script>
 import Name from "@/components/Name.vue";
 
-// import MouseMove from "@/components/MouseMove.vue";
-
 export default {
   name: "about",
   components: {
     Name,
-    // MouseMove,
   },
 };
 </script>
 
 <style scoped>
 .container_about_text {
-  padding-left: 80px;
   display: flex;
-    justify-content: center;
+  justify-content: center;
+    padding-left: 80px;
+
 }
 .container_text {
   display: flex;
@@ -60,6 +53,8 @@ export default {
   text-align: left;
   /* padding: 30%; */
   width: 50%;
+    /* padding-left: 80px; */
+
 }
 /* p.text_about {
   font-size: 2rem;
@@ -83,5 +78,16 @@ export default {
 }
 .card-body {
   padding: 0rem 0rem;
+}
+
+/* --------[gliph]-------------------------- */
+.tags2 {
+  font-size: 20px;
+  font-family: "La Belle Aurore", cursive;
+  bottom: 50px;
+  top: 0;
+  display: flex;
+  justify-content: flex-end;
+  color: #515152;
 }
 </style>

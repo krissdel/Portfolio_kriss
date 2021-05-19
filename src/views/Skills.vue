@@ -14,18 +14,18 @@
       </h1>
     </div>
 
-    <Skills />
+    <!-- <Words /> -->
   </div>
 </template>
 
 <script>
-import Skills from "@/components/Skills.vue";
+// import Words from "@/components/Words.vue";
 
 export default {
-  name: "home",
+  name: "skills",
 
   components: {
-    Skills,
+    // Words,
   },
 };
 </script>

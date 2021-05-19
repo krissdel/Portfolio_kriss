@@ -1,5 +1,5 @@
 <template>
-   <div>
+   <div class="map">
     <!-- <div>
       <h2>Search and add a pin</h2>
     </div> -->
@@ -46,3 +46,9 @@ export default {
   // },
 }
 </script>
+
+<style scoped>
+/* .map {
+padding-bottom: 20pc;
+} */
+</style>

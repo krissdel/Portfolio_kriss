@@ -1,8 +1,8 @@
 <template>
   <div id="nav_bar">
     <nav class="nav_bar_icons">
-      <router-link to="/">
-        <img src="../assets/Ellipse 1.png" alt="Image logo" class="img" />
+      <router-link to="/homeLogo">
+        <img src="../assets/image/Ellipse 1.png" alt="Image logo" class="img" />
       </router-link>
       <!-- <b>Home</b> -->
       <router-link to="/">

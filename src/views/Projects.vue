@@ -27,7 +27,7 @@
           >
           <div class="project-image">
             <a href="https://rextense.com/" target="_blank"
-              ><img src="../assets/rextense.png" alt="image rextense " />
+              ><img src="../assets/image/rextense.png" alt="image rextense " />
             </a>
           </div>
         </article>
@@ -43,7 +43,7 @@
           <div class="project-image">
             <a href="#">
               <img
-                src="../assets/groupomania_projet2.png"
+                src="../assets/image/groupomania_projet2.png"
                 alt="image groupomania"
               />
             </a>
@@ -57,7 +57,7 @@
           <a class="project-link" href="#">Lien Github</a>
           <div class="project-image">
             <a href="#">
-              <img src="../assets/so_pekocko2.png" alt="image so_pekocko" />
+              <img src="../assets/image/so_pekocko2.png" alt="image so_pekocko" />
             </a>
           </div>
         </article>
@@ -69,7 +69,7 @@
           <a class="project-link" href="#">Lien Github</a>
           <div class="project-image">
             <a href="#">
-              <img src="../assets/orinoco2.png" alt="image orinoco" />
+              <img src="../assets/image/orinoco2.png" alt="image orinoco" />
             </a>
           </div>
         </article>
@@ -82,7 +82,7 @@
           <div class="project-image">
             <a href="#">
               <img
-                src="../assets/chouette_agence2.png"
+                src="../assets/image/chouette_agence2.png"
                 alt="image la chouette agence"
               />
             </a>
@@ -96,7 +96,7 @@
           <a class="project-link" href="#">Lien Github</a>
           <div class="project-image">
             <a href="#">
-              <img src="../assets/ohmyfood2.png" alt="image ohmyfood" />
+              <img src="../assets/image/ohmyfood2.png" alt="image ohmyfood" />
             </a>
           </div>
         </article>
@@ -109,7 +109,7 @@
           <a class="project-link" href="#">Lien Github</a>
           <div class="project-image">
             <a href="#">
-              <img src="../assets/cv2.png" alt="image projet CV" />
+              <img src="../assets/image/cv2.png" alt="image projet CV" />
             </a>
           </div>
         </article>
@@ -117,9 +117,9 @@
     </div>
     <span class="tags4"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
 
-    <div>
+    <!-- <div>
       <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -139,7 +139,8 @@ export default {
 .wrapper {
   max-width: 900px;
   margin: auto auto;
-  padding: 1em;
+  /* padding: 1em; */
+  padding-left: 80px;
 }
 
 .grid-container {
