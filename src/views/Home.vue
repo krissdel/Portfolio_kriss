@@ -1,6 +1,13 @@
 <template>
   <!-- <div class="about"> -->
   <div class="home">
+
+
+
+
+
+
+    
     <div id="wrapper">
       <h1>
         <span class="letter01">H</span>
@@ -30,6 +37,21 @@
         <span class="letter21">r</span>
         <span class="letter22">m</span>
         <span class="letter23">e</span>
+        <br />
+        <br />
+        <span class="letter24">w</span>
+        <span class="letter25">e</span>
+        <span class="letter26">b</span>
+        &nbsp;
+        <span class="letter27">d</span>
+        <span class="letter28">e</span>
+        <span class="letter29">v</span>
+        <span class="letter30">e</span>
+        <span class="letter31">l</span>
+        <span class="letter32">o</span>
+        <span class="letter33">p</span>
+        <span class="letter34">e</span>
+        <span class="letter34">r</span>
       </h1>
     </div>
 
@@ -41,10 +63,10 @@
     <!-- --------------------- -->
     <!-- <div id="title" class="slide header">
       <div class="tags"> -->
-        <!-- <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span> -->
-        <!-- <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
+    <!-- <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span> -->
+    <!-- <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
       </div> -->
-      <!-- <h2>Welcome to my portfolio</h2>
+    <!-- <h2>Welcome to my portfolio</h2>
       <h3>i'm a web developper front / back</h3> -->
     <!-- </div> -->
 
@@ -171,7 +193,45 @@ h1 span {
   animation: letters 1s ease 4200ms forwards;
 }
 .letter23 {
-  animation: letters 1s ease 4300ms forwards;
+  animation: letters 1s ease 4400ms forwards;
+}
+
+/* -----["web developer"]---------------------------------- */
+.letter24 {
+  animation: letters 1s ease 4600ms forwards;
+}
+.letter25 {
+  animation: letters 1s ease 4800ms forwards;
+}
+.letter26 {
+  animation: letters 1s ease 5000ms forwards;
+}
+.letter27 {
+  animation: letters 1s ease 5200ms forwards;
+}
+.letter28 {
+  animation: letters 1s ease 5400ms forwards;
+}
+.letter29 {
+  animation: letters 1s ease 5600ms forwards;
+}
+.letter30 {
+  animation: letters 1s ease 5800ms forwards;
+}
+.letter31 {
+  animation: letters 1s ease 6000ms forwards;
+}
+.letter32 {
+  animation: letters 1s ease 6200ms forwards;
+}
+.letter33 {
+  animation: letters 1s ease 6400ms forwards;
+}
+.letter34 {
+  animation: letters 1s ease 6600ms forwards;
+}
+.letter35 {
+  animation: letters 1s ease 6800ms forwards;
 }
 
 @keyframes letters {
@@ -190,7 +250,8 @@ h1 span {
   /* margin-top: 10vh; */
   /* background-image: url("../assets/922574.jpg"); */
 }
-#wrapper h1 {
+#wrapper h1,
+h2 {
   white-space: normal;
   display: inline-block;
   font-size: 3em;
@@ -202,6 +263,7 @@ h1 span {
   position: relative;
   margin-top: 2vh;
 }
+/* #wrapper h2 */
 /* h1 {
   font-family: "Libre Baskerville", serif;
   color: rgb(17, 236, 229);
