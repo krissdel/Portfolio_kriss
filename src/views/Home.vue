@@ -59,62 +59,18 @@
 
     <div class="tags">
       <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>
-    </div>
-    <!-- --------------------- -->
-    <!-- <div id="title" class="slide header">
-      <div class="tags"> -->
-    <!-- <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span> -->
-    <!-- <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-      </div> -->
-    <!-- <h2>Welcome to my portfolio</h2>
-      <h3>i'm a web developper front / back</h3> -->
-    <!-- </div> -->
+    </div>    
 
-    <!-- <div id="slide1" class="slide">
-      <div class="title">
-        <h1>Slide 1</h1>
-        <p></p>
-      </div>
-      <span class="tags1"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-    </div> -->
-
-    <!-- <div id="slide2" class="slide">
-      <div class="title">
-        <h1>Slide 2</h1>
-        <p></p>
-      </div>
-      <span class="tags6"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-    </div> -->
-
-    <!-- <div id="slide3" class="slide">
-      <div class="title">
-        <h1>Slide 3</h1>
-        <p></p>
-      </div>
-      <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-    </div>
-
-    <div id="slide4" class="slide header">
-      <div>
-        <span class="tags4"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-      </div>
-      <h1>The End</h1>
-    </div> -->
-
-    <!-- --------------------- -->
-
-    <!-- <TagsBall /> -->
   </div>
 </template>
 
 <script>
-// import TagsBall from '@/components/TagsBall.vue'
 
 export default {
   name: "home",
 
   components: {
-    // TagsBall
+    
   },
   props: {},
 };
@@ -247,7 +203,7 @@ h1 span {
 #wrapper {
   text-align: center;
   font-family: "Libre Baskerville", serif;
-  /* margin-top: 10vh; */
+  margin-top: 15vh;
   /* background-image: url("../assets/922574.jpg"); */
 }
 #wrapper h1,

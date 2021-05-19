@@ -1,21 +1,5 @@
 <template>
   <div class="sound">
-    <!-- <div class="controls"> -->
-    <!-- <button class="btn" v-if="!isPlaying" @click="play">
-      <span style="font-size: 1.5em; color: red">
-        <i class="fas fa-music"></i>
-      </span>
-    </button>
-
-    <button class="btn" @click="pause" v-else>
-      <span style="font-size: 1.5em; color: white">
-        <i class="fas fa-music"></i
-      ></span>
-    </button> -->
-    <!-- </div> -->
-<!-- -------------------------------------- -->
-
-
     <button
       class="btn"
       @click.prevent="audio.isPlaying ? pause(audio) : play(audio)"
@@ -38,8 +22,6 @@ export default {
     return {
       audios: [
         {
-        //   id: "SOUND",
-          // name: 'Muscle Car',
           file: new Audio(require("../assets/audio/SOUND.mp3")),
           isPlaying: false,
         },
@@ -50,7 +32,6 @@ export default {
     play(audio) {
       audio.isPlaying = true;
       audio.file.play();
-// audio.file++
     },
 
     pause(audio) {

@@ -1,10 +1,17 @@
 <template>
   <div class="container_about">
     <Name />
+
+    <!-- --------[tape words]--------------------------------------------------------------- -->
+    
+    <!-- ----------------------------------------------------------------------- -->
+
     <div class="container_about_text">
       <div class="container_text">
         <div class="card">
           <div class="card-body">
+            
+
             <p class="card-text">
               Développeur web ayant la capacité et les compétences nécessaires à
               la mise en oeuvre de nouveaux projets, je serais fier de mettre
@@ -33,18 +40,25 @@ import Name from "@/components/Name.vue";
 
 export default {
   name: "about",
+
   components: {
     Name,
   },
 };
 </script>
 
+
+
+
+
+
+
+
 <style scoped>
 .container_about_text {
   display: flex;
   justify-content: center;
-    padding-left: 80px;
-
+  padding-left: 80px;
 }
 .container_text {
   display: flex;
@@ -53,8 +67,7 @@ export default {
   text-align: left;
   /* padding: 30%; */
   width: 50%;
-    /* padding-left: 80px; */
-
+  /* padding-left: 80px; */
 }
 /* p.text_about {
   font-size: 2rem;
@@ -90,4 +103,6 @@ export default {
   justify-content: flex-end;
   color: #515152;
 }
+
+/* -----[tape words]-------------------------------------------- */
 </style>
