@@ -2,14 +2,17 @@
   <div id="app">
     
     <Sound />
+     <!-- <Loader /> -->
     <NavBar />
     <!-- <SoftSkills msg="Christian DELORME "/> -->
 
     <router-view />
+   
   </div>
 </template>
 
 <script>
+// import Loader from './components/Loader.vue';
 import NavBar from "./components/NavBar.vue";
 import Sound from "./components/Sound.vue";
 
@@ -19,6 +22,7 @@ export default {
   name: "App",
 
   components: {
+    // Loader,
     NavBar,
     Sound,
     // Map

@@ -4,9 +4,11 @@ import App from './App.vue'
 import router from './router'
 
 import VueKinesis from 'vue-kinesis'
+import loader from "vue-ui-preloader";
 
 Vue.use(VueKinesis)
 Vue.config.productionTip = false
+Vue.use(loader);
 
 Vue.use(VueGoogleMaps, {
   load: {

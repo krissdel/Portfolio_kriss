@@ -1,7 +1,7 @@
 <template>
   <div class="container_about">
     <Name />
-
+<Loader />
     <!-- --------[tape words]--------------------------------------------------------------- -->
     
     <!-- ----------------------------------------------------------------------- -->
@@ -37,12 +37,14 @@
 
 <script>
 import Name from "@/components/Name.vue";
+import Loader from '../components/Loader.vue';
 
 export default {
   name: "about",
 
   components: {
     Name,
+    Loader,
   },
 };
 </script>

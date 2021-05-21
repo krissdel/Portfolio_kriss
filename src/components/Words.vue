@@ -37,8 +37,20 @@ export default {
         { text: "CSS", value: 300 },
         { text: "NPM", value: 200 },
         { text: "BEM", value: 400 },
+
+        //  { text: "Vue.js", value: 1000 },
+        // { text: "node.js", value: 200 },
+        // { text: "express", value: 800 },
+        // { text: "Javascript", value: 1000000 },
+        // { text: "SQL", value: 100 },
+        // { text: "Sass", value: 200 },
+        // { text: "HTML", value: 800 },
+        // { text: "GitHub", value: 10000 },
+        // { text: "CSS", value: 300 },
+        // { text: "NPM", value: 200 },
+        // { text: "BEM", value: 400 },
       ],
-      fontSizeMapper: (word) => Math.log2(word.value) * 5,
+      fontSizeMapper: (word) => Math.log2(word.value) * 8,
     };
   },
   components: {
