@@ -23,6 +23,8 @@ export default {
   left: 50%;
   margin-left: -30px;
   bottom: 20px;
+  
+  
 }
 
 .arrows path {

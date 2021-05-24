@@ -1,10 +1,11 @@
 <template>
+<!-- <div class="container-lg"> -->
   <div class="Words">
     <div class="tags">
       <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
     </div>
     <!-- -------[parallax effect]------------------- -->
-
+    
     <kinesis-container>
       <kinesis-element :strength="30">
         <cloud :data="words" :fontSizeMapper="fontSizeMapper" />
@@ -16,6 +17,7 @@
     <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
     <!-- <span class="tags6"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span> -->
   </div>
+  <!-- </div> -->
 </template>
 
 <script>
@@ -37,18 +39,6 @@ export default {
         { text: "CSS", value: 300 },
         { text: "NPM", value: 200 },
         { text: "BEM", value: 400 },
-
-        //  { text: "Vue.js", value: 1000 },
-        // { text: "node.js", value: 200 },
-        // { text: "express", value: 800 },
-        // { text: "Javascript", value: 1000000 },
-        // { text: "SQL", value: 100 },
-        // { text: "Sass", value: 200 },
-        // { text: "HTML", value: 800 },
-        // { text: "GitHub", value: 10000 },
-        // { text: "CSS", value: 300 },
-        // { text: "NPM", value: 200 },
-        // { text: "BEM", value: 400 },
       ],
       fontSizeMapper: (word) => Math.log2(word.value) * 8,
     };

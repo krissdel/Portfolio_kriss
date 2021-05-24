@@ -2,29 +2,27 @@
   <div class="homeLogo">
     <div id="wrapper">
       <About />
-      <Arrow />
     </div>
+    <Arrow />
     <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>
     <div id="slide1" class="slide">
-          <div class="skills">
-      <h1>
-        <span class="letter01">S</span>
-        <span class="letter02">k</span>
-        <span class="letter03">i</span>
-        <span class="letter04">l</span>
-        <span class="letter05">l</span>
-        <span class="letter06">s</span>
-      </h1>
-    </div>
+      <div class="skills">
+        <h1>
+          <span class="letter01">S</span>
+          <span class="letter02">k</span>
+          <span class="letter03">i</span>
+          <span class="letter04">l</span>
+          <span class="letter05">l</span>
+          <span class="letter06">s</span>
+        </h1>
+      </div>
       <Words />
-      <Arrow />
     </div>
-
+    <Arrow />
     <div id="slide2" class="slide">
       <Projects />
-      <Arrow />
     </div>
-
+    <Arrow />
     <div id="slide3" class="slide">
       <Contact />
     </div>
@@ -57,6 +55,7 @@ export default {
 
 <style scoped>
 /* -----[]--------------------------- */
+
 #wrapper {
   text-align: center;
   font-family: "Libre Baskerville", serif;
@@ -70,8 +69,8 @@ export default {
   font-weight: 200;
   color: #11ece5;
   text-shadow: #11ece5 1px 0 10px;
-  /* background-clip: text; */
-  /* -webkit-background-clip: text; */
+  background-clip: text;
+  -webkit-background-clip: text;
   position: relative;
   margin-top: 2vh;
 }

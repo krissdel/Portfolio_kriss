@@ -6,7 +6,7 @@
       </router-link>
       <!-- <b>Home</b> -->
       <router-link to="/">
-        <span style="font-size: 1.5em; color: white">
+        <span id="icon" @click="colorOn" style="font-size: 1.5em; color: white">
           <i class="fas fa-home"></i>
         </span>
       </router-link>
@@ -18,10 +18,10 @@
       </router-link>
       <!-- <b>Skills</b> -->
       <router-link to="/skills">
-      <span style="font-size: 1.5em; color: white">
-        <i class="fas fa-eye"></i>
-      </span>
-       </router-link>
+        <span style="font-size: 1.5em; color: white">
+          <i class="fas fa-eye"></i>
+        </span>
+      </router-link>
       <!-- <b>My Projects</b> -->
       <router-link to="/projects">
         <span style="font-size: 1.5em; color: white">
@@ -31,41 +31,16 @@
       <!-- <b>Contact</b>  -->
       <router-link to="/contact">
         <span style="font-size: 1.5em; color: white">
-          <i class="fas fa-envelope"></i> 
-        </span
+          <i class="fas fa-envelope"></i> </span
       ></router-link>
 
-      <div
-        style="top: 0px; left: 100%; width: 2%"
-        data-v-4295d220=""
-        class="SignupBannerBottom__GlowingLine-sc-1lyynxn-5 gLPqNG"
-      ></div>
+      <div style="top: 0px; left: 100%; width: 2%" class="GlowingLine1"></div>
 
-      <div
-        data-v-4295d220=""
-        class="SignupBannerBottom__GlowingLine-sc-1lyynxn-5 gLPqNH"
-        style="top: 10pc; left: 100%; width: 2%"
-      ></div>
-      <div
-        data-v-4295d220=""
-        class="SignupBannerBottom__GlowingLine-sc-1lyynxn-5 gLPqNH"
-        style="top: 35pc; left: 100%; width: 2%"
-      ></div>
-      <div
-        data-v-4295d220=""
-        class="SignupBannerBottom__GlowingLine-sc-1lyynxn-5 gLPqNI"
-        style="top: 25pc; left: 100%; width: 2%"
-      ></div>
-      <div
-        data-v-4295d220=""
-        class="SignupBannerBottom__GlowingLine-sc-1lyynxn-5 gLPqNJ"
-        style="top: 45pc; left: 100%; width: 2%"
-      ></div>
-      <div
-        data-v-4295d220=""
-        class="SignupBannerBottom__GlowingLine-sc-1lyynxn-5 gLPqNJ"
-        style="top: 80pc; left: 100%; width: 2%"
-      ></div>
+      <div class="GlowingLine2" style="top: 10pc; left: 100%; width: 2%"></div>
+      <div class="GlowingLine2" style="top: 35pc; left: 100%; width: 2%"></div>
+      <div class="GlowingLine3" style="top: 25pc; left: 100%; width: 2%"></div>
+      <div class="GlowingLine4" style="top: 45pc; left: 100%; width: 2%"></div>
+      <div class="GlowingLine4" style="top: 80pc; left: 100%; width: 2%"></div>
     </nav>
   </div>
 </template>
@@ -73,57 +48,22 @@
 <script>
 export default {
   name: "NavBar",
+  data() {
+    return {};
+  },
+  methods: {
+    colorOn() {
+
+    },
+  },
 };
 </script>
 
 <style scoped>
 /* -----[nav bar]--------------------- */
-/* ::after {
-  box-sizing: border-box; 
-  box-sizing: content-box;
-} */
-* {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-*:before,
-*:after {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
-/* =====[glowing lines]================================== */
-.gLPqNG {
-  position: absolute;
-  height: 63px;
-  background: rgb(17, 236, 229);
-  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
-}
-.gLPqNH {
-  position: absolute;
-  height: 20px;
-  background: rgb(17, 236, 229);
-  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
-}
-.gLPqNI {
-  position: absolute;
-  height: 108px;
-  background: rgb(17, 236, 229);
-  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
-}
-.gLPqNJ {
-  position: absolute;
-  height: 115px;
-  background: rgb(17, 236, 229);
-  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
-}
-/* ====================================================== */
 
 #nav_bar {
   background: #0f1724;
-  /* background: #181818; */
-  /* border-color: red; */
   width: 80px;
   height: 100%;
   position: fixed;
@@ -135,6 +75,8 @@ export default {
   min-height: 500px;
   border: 1px solid rgb(42 97 95);
 }
+
+/* -----[icons]------------------------------------- */
 .nav_bar_icons {
   background: #181818;
   width: 80px;
@@ -147,15 +89,46 @@ export default {
   z-index: 3;
   min-height: 500px;
 }
+/* -----[icons:hover]----------------------------------- */
+.fa-home:hover {
+  color: rgb(17, 236, 229);
+}
+.fa-user:hover {
+  color: rgb(17, 236, 229);
+}
+.fa-eye:hover {
+  color: rgb(17, 236, 229);
+}
+.fa-briefcase:hover {
+  color: rgb(17, 236, 229);
+}
+.fa-envelope:hover {
+  color: rgb(17, 236, 229);
+}
+/* -----[icons:active]----------------------------------- */
+/* 
 .fa-home:active {
   color: rgb(17, 236, 229);
 }
+.fa-user:active {
+  color: rgb(17, 236, 229);
+}
+.fa-eye:active {
+  color: rgb(17, 236, 229);
+}
+.fa-briefcase:active {
+  color: rgb(17, 236, 229);
+}
+.fa-envelope:active {
+  color: rgb(17, 236, 229);
+} */
+
 .img {
   padding: 10px;
   height: 40px;
 }
 /* =====[icones hover]============================ */
-.nav ul {
+/* .nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -168,10 +141,10 @@ export default {
   display: block;
   float: left;
   height: 90px;
-  width: 145px; /*new*/
-  text-align: center; /*new*/
+  width: 145px; 
+  text-align: center; 
   transition: all 0.2s ease-in-out;
-}
+} */
 /* .nav .home {
     background: #a3d39c;
 }
@@ -184,15 +157,15 @@ export default {
 .nav .contact {
     background: #35404f;
 } */
-.nav li a {
+/* .nav li a {
   font-family: FontAwesome;
   color: #eee;
   font-size: 22pt;
   text-decoration: none;
   display: block;
   padding: 15px;
-}
-.nav li i {
+} */
+/* .nav li i {
   color: #fff;
   padding: 0 10px;
 }
@@ -208,5 +181,49 @@ export default {
 }
 .nav a:hover b {
   display: block;
+} */
+/* ::after {
+  box-sizing: border-box; 
+  box-sizing: content-box;
+} */
+/* id="nav_bar" */
+/* * */
+/* #nav_bar {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
 }
+
+#nav_bar:before,
+:after {
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+} */
+/* =====[glowing lines]================================== */
+.GlowingLine1 {
+  position: absolute;
+  height: 63px;
+  background: rgb(17, 236, 229);
+  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
+}
+.GlowingLine2 {
+  position: absolute;
+  height: 20px;
+  background: rgb(17, 236, 229);
+  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
+}
+.GlowingLine3 {
+  position: absolute;
+  height: 108px;
+  background: rgb(17, 236, 229);
+  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
+}
+.GlowingLine4 {
+  position: absolute;
+  height: 115px;
+  background: rgb(17, 236, 229);
+  box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
+}
+/* ====================================================== */
 </style>

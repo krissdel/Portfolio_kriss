@@ -1,34 +1,42 @@
 <template>
   <div class="container_about">
     <Name />
-<Loader />
+    <!-- <Loader /> -->
     <!-- --------[tape words]--------------------------------------------------------------- -->
-    
+
     <!-- ----------------------------------------------------------------------- -->
 
     <div class="container_about_text">
       <div class="container_text">
-        <div class="card">
-          <div class="card-body">
-            
+        <p class="text-md-start">
+          Développeur web ayant la capacité et les compétences nécessaires à la
+          mise en oeuvre de nouveaux projets, je serais fier de mettre mon
+          savoir faire à votre service
+        </p>
 
+        <!-- <div class="card">
+          <div class="card-body">
             <p class="card-text">
               Développeur web ayant la capacité et les compétences nécessaires à
               la mise en oeuvre de nouveaux projets, je serais fier de mettre
               mon savoir faire à votre service
             </p>
           </div>
-        </div>
-
-        <div class="card">
+        </div> -->
+        <p class="text-md-start">
+          Web developer with the ability and the skills needed to implementation
+          of new projects, I would be proud to put my knowledge at your service
+        </p>
+        <!-- <div class="card">
           <div class="card-body">
+            
             <p class="card-text">
               Web developer with the ability and the skills needed to
               implementation of new projects, I would be proud to put my
               knowledge at your service
             </p>
           </div>
-        </div>
+        </div> -->
       </div>
     </div>
     <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
@@ -37,14 +45,14 @@
 
 <script>
 import Name from "@/components/Name.vue";
-import Loader from '../components/Loader.vue';
+// import Loader from '../components/Loader.vue';
 
 export default {
   name: "about",
 
   components: {
     Name,
-    Loader,
+    // Loader,
   },
 };
 </script>
@@ -65,28 +73,17 @@ export default {
 .container_text {
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   text-align: left;
-  /* padding: 30%; */
   width: 50%;
   /* padding-left: 80px; */
 }
-/* p.text_about {
-  font-size: 2rem;
-  font-family: "Libre Baskerville", serif;
-  color: white;
-  width: 100%;
-  padding-top: 6pc;
-  padding-left: 20pc;
-  padding-right: 20pc;
-  text-align: left;
-} */
-.card-text {
-  font-size: 1.5rem;
+.text-md-start {
+   font-size: 1.5rem;
   font-family: "Libre Baskerville", serif;
   color: wheat;
-  background-color: #060b0e;
+  padding-bottom: 50px;
 }
+
 .card {
   margin-bottom: 6pc;
   border-color: #060b0e;

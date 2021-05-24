@@ -55,7 +55,7 @@
       </h1>
     </div>
 
-    <img src="../assets/image/moi.png" alt="Image moi" class="img" />
+    <!-- <img src="../assets/image/moi.png" alt="Image moi" class="img" /> -->
 
     <div class="tags">
       <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>

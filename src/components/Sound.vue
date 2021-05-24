@@ -22,7 +22,7 @@ export default {
     return {
       audios: [
         {
-          file: new Audio(require("../assets/audio/SOUND.mp3")),
+          file: new Audio(require("../assets/audio/Onycs-Shine.mp3")),
           isPlaying: false,
         },
       ],
