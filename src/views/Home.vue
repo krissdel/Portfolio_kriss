@@ -1,13 +1,5 @@
 <template>
-  <!-- <div class="about"> -->
   <div class="home">
-
-
-
-
-
-
-    
     <div id="wrapper">
       <h1>
         <span class="letter01">H</span>

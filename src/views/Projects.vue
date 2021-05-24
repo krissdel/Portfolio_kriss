@@ -148,6 +148,7 @@ export default {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto 1.5fr 1fr;
   gap: 2rem;
+  padding: 3px;
 }
 
 h1 {

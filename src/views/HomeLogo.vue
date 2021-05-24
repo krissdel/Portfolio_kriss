@@ -3,7 +3,7 @@
     <div id="wrapper">
       <About />
     </div>
-    <Arrow />
+    <!-- <Arrow /> -->
     <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>
     <div id="slide1" class="slide">
       <div class="skills">
@@ -16,25 +16,25 @@
           <span class="letter06">s</span>
         </h1>
       </div>
-      <Words />
+      <!-- <Words /> -->
     </div>
-    <Arrow />
+    <!-- <Arrow /> -->
     <div id="slide2" class="slide">
-      <Projects />
+      <!-- <Projects /> -->
     </div>
-    <Arrow />
+    <!-- <Arrow /> -->
     <div id="slide3" class="slide">
-      <Contact />
+      <!-- <Contact /> -->
     </div>
   </div>
 </template>
 
 <script>
-import Words from "@/components/Words.vue";
-import Arrow from "@/components/Arrow.vue";
+// import Words from "@/components/Words.vue";
+// import Arrow from "@/components/Arrow.vue";
 
-import Projects from "./Projects.vue";
-import Contact from "./Contact.vue";
+// import Projects from "./Projects.vue";
+// import Contact from "./Contact.vue";
 import About from "./About.vue";
 // import Skills from "./Skills.vue";
 
@@ -42,11 +42,11 @@ export default {
   name: "homeLogo",
 
   components: {
-    Words,
-    Projects,
-    Contact,
+    // Words,
+    // Projects,
+    // Contact,
     About,
-    Arrow,
+    // Arrow
   },
   props: {},
 };

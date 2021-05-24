@@ -40,7 +40,7 @@ export default {
         { text: "NPM", value: 200 },
         { text: "BEM", value: 400 },
       ],
-      fontSizeMapper: (word) => Math.log2(word.value) * 8,
+      fontSizeMapper: (word) => Math.log2(word.value) * 2,
     };
   },
   components: {
