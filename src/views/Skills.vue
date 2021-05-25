@@ -1,6 +1,6 @@
 <template>
   <div id="wrapper">
-       <div>
+    <div>
       <span class="tags4"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
     </div>
     <div id="skills">
@@ -16,7 +16,6 @@
 
     <!-- <Words /> -->
   </div>
-  
 </template>
 
 <script>
@@ -41,6 +40,7 @@ export default {
   font-family: "Libre Baskerville", serif;
   margin-top: 10vh;
   margin-bottom: 10vh;
+  padding-left: 80px;
 }
 #skills h1 {
   white-space: normal;

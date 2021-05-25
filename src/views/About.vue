@@ -73,12 +73,12 @@ export default {
 .container_text {
   display: flex;
   flex-direction: column;
-  text-align: left;
-  width: 50%;
+  text-align: justify;
+  width: 70%;
   /* padding-left: 80px; */
 }
 .text-md-start {
-   font-size: 1.5rem;
+   font-size: 1rem;
   font-family: "Libre Baskerville", serif;
   color: wheat;
   padding-bottom: 50px;

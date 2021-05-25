@@ -195,7 +195,7 @@ h1 span {
 #wrapper {
   text-align: center;
   font-family: "Libre Baskerville", serif;
-  margin-top: 15vh;
+  margin-top: 10vh;
   /* background-image: url("../assets/922574.jpg"); */
 }
 #wrapper h1,

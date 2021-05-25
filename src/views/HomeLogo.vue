@@ -1,7 +1,7 @@
 <template>
   <div class="homeLogo">
     <div id="wrapper">
-      <About />
+      <!-- <About /> -->
     </div>
     <!-- <Arrow /> -->
     <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>
@@ -35,7 +35,7 @@
 
 // import Projects from "./Projects.vue";
 // import Contact from "./Contact.vue";
-import About from "./About.vue";
+// import About from "./About.vue";
 // import Skills from "./Skills.vue";
 
 export default {
@@ -45,7 +45,7 @@ export default {
     // Words,
     // Projects,
     // Contact,
-    About,
+    // About,
     // Arrow
   },
   props: {},

@@ -92,6 +92,7 @@ h1 {
 
 .row {
   flex-direction: column;
+  padding: 20px;
 }
 
 label {
