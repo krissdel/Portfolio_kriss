@@ -97,6 +97,7 @@ export default {
 h1 span {
   opacity: 0;
 }
+
 .letter01 {
   animation: letters 1s ease 0000ms forwards;
 }
@@ -169,7 +170,7 @@ h1::after {
 
 .slide {
   position: relative;
-  padding: 25vh 10%;
+  /* padding: 25vh 10%; */
   min-height: 100vh;
   width: 100vw;
   box-sizing: border-box;
