@@ -54,7 +54,9 @@
         <input class="btn btn-primary" type="submit" value="Send" />
       </div>
     </div>
-    <Map />
+    <div class="map">
+      <Map />
+    </div>
 
     <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
   </div>
@@ -66,12 +68,15 @@ import Map from "@/components/Map.vue";
 export default {
   name: "Contact",
   components: {
-    Map
-  } 
+    Map,
+  },
 };
 </script>
 
 <style scoped>
+.map {
+  padding: 10px;
+}
 h1 {
   color: rgb(17, 236, 229);
 }
@@ -164,7 +169,7 @@ label {
 /* *******[Animations des lettres ]******************************************** */
 
 /* Réglages du bloc de texte général */
- #contact {
+#contact {
   text-align: center;
   font-family: "Libre Baskerville", serif;
   margin-top: 10vh;
@@ -181,10 +186,10 @@ label {
   -webkit-background-clip: text;
   position: relative;
   margin-top: 2vh;
-} 
+}
 
 /* Animations des lettres */
- h1 span {
+h1 span {
   opacity: 0;
 }
 .letter01 {
@@ -216,9 +221,9 @@ label {
   100% {
     opacity: 1;
   }
-} 
+}
 /* -----[souslignage]---------------------------------------- */
- h1::after {
+h1::after {
   content: "";
   display: block;
   background: linear-gradient(
@@ -245,5 +250,5 @@ label {
     width: 100%;
     opacity: 1;
   }
-} 
+}
 </style>

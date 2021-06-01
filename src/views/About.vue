@@ -12,31 +12,20 @@
           Développeur web ayant la capacité et les compétences nécessaires à la
           mise en oeuvre de nouveaux projets, je serais fier de mettre mon
           savoir faire à votre service
+          <br />
+          <br />
+          Avançons ensemble . . .
         </p>
+        <!-- <p class="text-md-start">Avançons ensemble ...</p> -->
 
-        <!-- <div class="card">
-          <div class="card-body">
-            <p class="card-text">
-              Développeur web ayant la capacité et les compétences nécessaires à
-              la mise en oeuvre de nouveaux projets, je serais fier de mettre
-              mon savoir faire à votre service
-            </p>
-          </div>
-        </div> -->
         <p class="text-md-start">
           Web developer with the ability and the skills needed to implementation
           of new projects, I would be proud to put my knowledge at your service
+         <br />
+          <br />
+          Let's move forward together . . .
         </p>
-        <!-- <div class="card">
-          <div class="card-body">
-            
-            <p class="card-text">
-              Web developer with the ability and the skills needed to
-              implementation of new projects, I would be proud to put my
-              knowledge at your service
-            </p>
-          </div>
-        </div> -->
+        <!-- <p class="text-md-start">Let's move forward together ...</p> -->
       </div>
     </div>
     <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
@@ -76,12 +65,14 @@ export default {
   text-align: justify;
   width: 70%;
   /* padding-left: 80px; */
+  align-items: center;
 }
 .text-md-start {
-   font-size: 1rem;
+  font-size: 1rem;
   font-family: "Libre Baskerville", serif;
   color: wheat;
   padding-bottom: 50px;
+  max-width: 40pc;
 }
 
 .card {

@@ -80,106 +80,106 @@ h1 span {
   animation: letters 1s ease 0000ms forwards;
 }
 .letter02 {
-  animation: letters 1s ease 0200ms forwards;
+  animation: letters 1s ease 0100ms forwards;
 }
 .letter04 {
-  animation: letters 1s ease 0600ms forwards;
+  animation: letters 1s ease 0200ms forwards;
 }
 .letter05 {
-  animation: letters 1s ease 0800ms forwards;
+  animation: letters 1s ease 0300ms forwards;
 }
 .letter06 {
-  animation: letters 1s ease 1000ms forwards;
+  animation: letters 1s ease 0400ms forwards;
 }
 .letter07 {
-  animation: letters 1s ease 1200ms forwards;
+  animation: letters 1s ease 0500ms forwards;
 }
 
 .letter08 {
-  animation: letters 1s ease 1400ms forwards;
+  animation: letters 1s ease 0600ms forwards;
 }
 .letter09 {
-  animation: letters 1s ease 1600ms forwards;
+  animation: letters 1s ease 0700ms forwards;
 }
 .letter10 {
-  animation: letters 1s ease 1600ms forwards;
+  animation: letters 1s ease 0800ms forwards;
 }
 .letter11 {
-  animation: letters 1s ease 2000ms forwards;
+  animation: letters 1s ease 0900ms forwards;
 }
 .letter12 {
-  animation: letters 1s ease 2200ms forwards;
+  animation: letters 1s ease 1000ms forwards;
 }
 .letter13 {
-  animation: letters 1s ease 2400ms forwards;
+  animation: letters 1s ease 1100ms forwards;
 }
 .letter14 {
-  animation: letters 1s ease 2600ms forwards;
+  animation: letters 1s ease 1200ms forwards;
 }
 .letter15 {
-  animation: letters 1s ease 2800ms forwards;
+  animation: letters 1s ease 1300ms forwards;
 }
 .letter16 {
-  animation: letters 1s ease 3000ms forwards;
+  animation: letters 1s ease 1400ms forwards;
 }
 .letter17 {
-  animation: letters 1s ease 3200ms forwards;
+  animation: letters 1s ease 1500ms forwards;
 }
 .letter18 {
-  animation: letters 1s ease 3400ms forwards;
+  animation: letters 1s ease 1600ms forwards;
 }
 .letter19 {
-  animation: letters 1s ease 3600ms forwards;
+  animation: letters 1s ease 1700ms forwards;
 }
 .letter20 {
-  animation: letters 1s ease 3800ms forwards;
+  animation: letters 1s ease 1800ms forwards;
 }
 .letter21 {
-  animation: letters 1s ease 4000ms forwards;
+  animation: letters 1s ease 1900ms forwards;
 }
 .letter22 {
-  animation: letters 1s ease 4200ms forwards;
+  animation: letters 1s ease 2000ms forwards;
 }
 .letter23 {
-  animation: letters 1s ease 4400ms forwards;
+  animation: letters 1s ease 2100ms forwards;
 }
 
 /* -----["web developer"]---------------------------------- */
 .letter24 {
-  animation: letters 1s ease 4600ms forwards;
+  animation: letters 1s ease 2200ms forwards;
 }
 .letter25 {
-  animation: letters 1s ease 4800ms forwards;
+  animation: letters 1s ease 2300ms forwards;
 }
 .letter26 {
-  animation: letters 1s ease 5000ms forwards;
+  animation: letters 1s ease 2400ms forwards;
 }
 .letter27 {
-  animation: letters 1s ease 5200ms forwards;
+  animation: letters 1s ease 2500ms forwards;
 }
 .letter28 {
-  animation: letters 1s ease 5400ms forwards;
+  animation: letters 1s ease 2600ms forwards;
 }
 .letter29 {
-  animation: letters 1s ease 5600ms forwards;
+  animation: letters 1s ease 2700ms forwards;
 }
 .letter30 {
-  animation: letters 1s ease 5800ms forwards;
+  animation: letters 1s ease 2800ms forwards;
 }
 .letter31 {
-  animation: letters 1s ease 6000ms forwards;
+  animation: letters 1s ease 2900ms forwards;
 }
 .letter32 {
-  animation: letters 1s ease 6200ms forwards;
+  animation: letters 1s ease 3000ms forwards;
 }
 .letter33 {
-  animation: letters 1s ease 6400ms forwards;
+  animation: letters 1s ease 3100ms forwards;
 }
 .letter34 {
-  animation: letters 1s ease 6600ms forwards;
+  animation: letters 1s ease 3200ms forwards;
 }
 .letter35 {
-  animation: letters 1s ease 6800ms forwards;
+  animation: letters 1s ease 3300ms forwards;
 }
 
 @keyframes letters {

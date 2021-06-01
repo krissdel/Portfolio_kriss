@@ -13,24 +13,111 @@
         <span class="letter06">s</span>
       </h1>
     </div>
+    <div class="words">
+      <!-- <Words /> -->
+       <!-- <div id="wordcloud"> -->
+         <kinesis-container>
+      <kinesis-element :strength="30">
+      <wordcloud
+      :data="defaultWords"
+      nameKey="name"
+      valueKey="value"
+      :color="myColors"
+      :showTooltip="false"
+      :wordClick="wordClickHandler">
+      </wordcloud>
+</kinesis-element>
+    </kinesis-container>
 
-    <!-- <Words /> -->
+     
+    </div>
   </div>
 </template>
 
 <script>
 // import Words from "@/components/Words.vue";
+// import WordCloud from "@/components/WordCloud.vue";
+import wordcloud from 'vue-wordcloud'
 
 export default {
   name: "skills",
 
-  components: {
-    // Words,
+
+ components: {
+    wordcloud,
   },
+  methods: {
+    wordClickHandler(name, value, vm) {
+      console.log('wordClickHandler', name, value, vm);
+    }
+  },
+  data() {
+    return {
+      myColors: ['#1f77b4', '#629fc9', '#94bedb', '#c9e0ef'],
+      defaultWords: [{
+          "name": "Vue.js",
+          "value": 26
+        },
+        {
+          "name": "node.js",
+          "value": 19
+        },
+        {
+          "name": "express",
+          "value": 18
+        },
+        {
+          "name": "Javascript",
+          "value": 16
+        },
+        {
+          "name": "SQL",
+          "value": 15
+        },
+        {
+          "name": "Sass",
+          "value": 9
+        },
+        {
+          "name": "HTML",
+          "value": 9
+        },
+        {
+          "name": "GitHub",
+          "value": 9
+        },
+        {
+          "name": "CSS",
+          "value": 6
+        },
+        {
+          "name": "NPM",
+          "value": 15
+        },
+        {
+          "name": "BEM",
+          "value": 9
+        },
+      ]
+    }
+  }
+
+
 };
 </script>
 
+
+
+
+
+
+
+
 <style scoped>
+/* .words {
+  width: 20px;
+} */
+
 .wrapper {
   padding-left: 80px;
 }
