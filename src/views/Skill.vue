@@ -1,5 +1,5 @@
 <template>
-  <div id="wrapper">
+  <div class="wrapper">
     <div>
       <span class="tags4"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
     </div>
@@ -35,12 +35,10 @@
 </template>
 
 <script>
-// import Words from "@/components/Words.vue";
-// import WordCloud from "@/components/WordCloud.vue";
 import wordcloud from 'vue-wordcloud'
 
 export default {
-  name: "skills",
+  name: "Skill",
 
 
  components: {
@@ -88,7 +86,7 @@ export default {
         },
         {
           "name": "CSS",
-          "value": 6
+          "value": 9
         },
         {
           "name": "NPM",
@@ -114,13 +112,15 @@ export default {
 
 
 <style scoped>
-/* .words {
-  width: 20px;
-} */
+.words {
+  /* width: 20px; */
+    padding-left: 75px;
 
-.wrapper {
-  padding-left: 80px;
 }
+
+/* .wrapper {
+  padding-left: 80px;
+} */
 
 #skills {
   text-align: center;

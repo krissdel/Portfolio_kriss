@@ -116,10 +116,6 @@
       </div>
     </div>
     <span class="tags4"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-
-    <!-- <div>
-      <span class="tags5"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
-    </div> -->
   </div>
 </template>
 
@@ -139,7 +135,6 @@ export default {
 .wrapper {
   max-width: 900px;
   margin: auto auto;
-  /* padding: 1em; */
   padding-left: 80px;
 }
 
@@ -148,7 +143,6 @@ export default {
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto 1.5fr 1fr;
   gap: 2rem;
-  /* padding: 30px; */
 }
 
 h1 {
@@ -166,7 +160,6 @@ h1 {
   grid-template-rows: subgrid;
   grid-row: span 3;
   grid-row-gap: 0em;
-  /* background: linear-gradient(90deg, white 0%, #0f1724 100%); */
   background: linear-gradient(90deg, white 0%, #11ece5 100%);
   transition: all 500ms ease-in-out;
   animation: fade-in-up 2s backwards;

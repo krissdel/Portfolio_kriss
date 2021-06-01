@@ -70,7 +70,7 @@ export default {
 .text-md-start {
   font-size: 1rem;
   font-family: "Libre Baskerville", serif;
-  color: wheat;
+  color: #a9f3f1;
   padding-bottom: 50px;
   max-width: 40pc;
 }

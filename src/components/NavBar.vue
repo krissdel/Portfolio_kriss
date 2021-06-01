@@ -16,8 +16,8 @@
           <i class="fas fa-user"></i>
         </span>
       </router-link>
-      <!-- <b>Skills</b> -->
-      <router-link to="/skills">
+      <!-- <b>Skill</b> -->
+      <router-link to="/skill">
         <span style="font-size: 1.5em; color: white">
           <i class="fas fa-eye"></i>
         </span>
