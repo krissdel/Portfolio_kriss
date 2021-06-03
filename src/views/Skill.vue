@@ -96,6 +96,44 @@ export default {
           "name": "BEM",
           "value": 9
         },
+        // ------------------------
+         {
+          "name": "attentive",
+          "value": 19
+        },
+        {
+          "name": "confident",
+          "value": 18
+        },
+        {
+          "name": "critical",
+          "value": 16
+        },
+        {
+          "name": "multi-tasker",
+          "value": 15
+        },
+        {
+          "name": "conceptual",
+          "value": 9
+        },
+        {
+          "name": "creative",
+          "value": 9
+        },
+        {
+          "name": "analytical",
+          "value": 9
+        },
+        {
+          "name": "calm",
+          "value": 9
+        },
+        {
+          "name": "self-controlled",
+          "value": 15
+        },
+       
       ]
     }
   }
