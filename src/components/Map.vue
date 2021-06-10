@@ -4,9 +4,17 @@
      <GmapMap
       :center='center'
       :zoom='12'
-     
-      style='width:100%;  height: 400px;'
+      style='width:100%;  height: 400px;'>
+
+       <GmapMarker
+    :key="index"
+    v-for="(m, index) in markers"
+    :position="m.position"
+    :clickable="true"
+    :draggable="true"
+    @click="center=m.position"
     />
+    </GmapMap>
      <!-- map = new google.maps.Map(document.getElementById('map'), {
   center: {lat: -34.397, lng: 150.644},
   zoom: 8,

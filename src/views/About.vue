@@ -2,10 +2,7 @@
   <div class="container_about">
     <Name />
     <!-- <Loader /> -->
-    <!-- --------[tape words]--------------------------------------------------------------- -->
-
-    <!-- ----------------------------------------------------------------------- -->
-
+   
     <div class="container_about_text">
       <div class="container_text">
         <p class="text-md-start">
@@ -31,6 +28,7 @@
     <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
   </div>
 </template>
+
 
 <script>
 import Name from "@/components/Name.vue";
