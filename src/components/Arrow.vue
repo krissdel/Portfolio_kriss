@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "arrow",
+  name: "Arrow",
 };
 </script>
 
@@ -21,12 +21,14 @@ export default {
   height: 72px;
   position: absolute;
   left: 50%;
-  margin-left: -30px;
-  bottom: 20px;
-  
-  
-}
+  /* margin-left: -30px; */
+  margin-left: 11px;
 
+  bottom: 20px;  
+}
+/* .container_arrow {
+  padding-left: 80px;
+} */
 .arrows path {
   stroke: #11ece5;
   fill: transparent;

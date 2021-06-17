@@ -14,46 +14,62 @@
         <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>
         <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
       </div>
-      <div class="row">
-        <div class="col">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="First name"
-            aria-label="First name"
-          />
+      <!-- -------------------------------------------------- -->
+
+      <!-- -------------------------------------------------- -->
+
+      <form class="contact-form" @submit.prevent="sendEmail">
+        <div class="row">
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="First name"
+              aria-label="First name"
+              v-model="First_name"
+              name="First_name"
+            />
+          </div>
+
+          <div class="col">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Last name"
+              aria-label="Last_name"
+              v-model="Last_name"
+              name="Last_name"
+            />
+          </div>
+          <div class="col">
+            <label for="inputEmail4" class="form-label"></label>
+            <input
+              type="email"
+              class="form-control"
+              id="inputEmail4"
+              placeholder="Email"
+              v-model="email"
+              name="email"
+            />
+          </div>
+          <div class="col">
+            <label for="floatingTextarea2">Comments</label>
+            <textarea
+              class="form-control"
+              placeholder="Leave a message here"
+              id="floatingTextarea2"
+              style="height: 100px"
+              name="message"
+              v-model="message"
+            ></textarea>
+          </div>
         </div>
-        <div class="col">
-          <input
-            type="text"
-            class="form-control"
-            placeholder="Last name"
-            aria-label="Last name"
-          />
+        <div class="col-btn">
+          <input class="btn btn-primary" type="submit" value="Send" />
         </div>
-        <div class="col">
-          <label for="inputEmail4" class="form-label"></label>
-          <input
-            type="email"
-            class="form-control"
-            id="inputEmail4"
-            placeholder="Email"
-          />
-        </div>
-        <div class="col">
-          <textarea
-            class="form-control"
-            placeholder="Leave a message here"
-            id="floatingTextarea2"
-            style="height: 100px"
-          ></textarea>
-          <label for="floatingTextarea2">Comments</label>
-        </div>
-      </div>
-      <div class="col-btn">
-        <input class="btn btn-primary" type="submit" value="Send" />
-      </div>
+      </form>
     </div>
+
     <div class="map">
       <Map />
     </div>
@@ -64,11 +80,45 @@
 
 <script>
 import Map from "@/components/Map.vue";
+import emailjs from "emailjs-com";
 
 export default {
   name: "Contact",
   components: {
     Map,
+  },
+
+  data() {
+    return {
+      First_name: "",
+      Last_name: "",
+      email: "",
+      message: "",
+    };
+  },
+  methods: {
+    sendEmail(e) {
+      try {
+        emailjs.sendForm(
+          "YOUR_SERVICE_ID",
+          "YOUR_TEMPLATE_ID",
+          e.target,
+          "YOUR_USER_ID",
+          {
+            name: this.name,
+            email: this.email,
+            message: this.message,
+          }
+        );
+      } catch (error) {
+        console.log({ error });
+      }
+      // Reset form field
+      this.First_name = "";
+      this.Last_name = "";
+      this.email = "";
+      this.message = "";
+    },
   },
 };
 </script>

@@ -151,15 +151,8 @@ export default {
 
 <style scoped>
 .words {
-  /* width: 20px; */
     padding-left: 75px;
-
 }
-
-/* .wrapper {
-  padding-left: 80px;
-} */
-
 #skills {
   text-align: center;
   font-family: "Libre Baskerville", serif;
@@ -169,7 +162,6 @@ export default {
 }
 #skills h1 {
   white-space: normal;
-  /* width: 26%; */
   display: inline-block;
   font-size: 3em;
   font-weight: 200;
@@ -188,7 +180,6 @@ export default {
   top: 0;
   color: #515152;
   margin-left: 18vw;
-  /* margin-top: 21vh; */
 }
 /* -----[animation letters]----------------------- */
 h1 span {

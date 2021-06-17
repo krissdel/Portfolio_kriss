@@ -1,16 +1,20 @@
 <template>
   <div class="homeLogo">
-    <About />
-    <!-- <Arrow /> -->
-    <!-- <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span> -->
+    <div id="slide0" class="slide">
+      <About />
+      <Arrow />
+    </div>
+
     <div id="slide1" class="slide">
       <Skill />
+      <Arrow />
     </div>
-    <!-- <Arrow /> -->
+
     <div id="slide2" class="slide">
       <Projects />
+      <Arrow />
     </div>
-    <!-- <Arrow /> -->
+
     <div id="slide3" class="slide">
       <Contact />
     </div>
@@ -21,7 +25,7 @@
 import About from "./About.vue";
 import Skill from "./Skill.vue";
 
-// import Arrow from "@/components/Arrow.vue";
+import Arrow from "@/components/Arrow.vue";
 
 import Projects from "./Projects.vue";
 import Contact from "./Contact.vue";
@@ -34,8 +38,7 @@ export default {
     Skill,
     Projects,
     Contact,
-
-    // Arrow
+    Arrow,
   },
   props: {},
 };
@@ -43,7 +46,6 @@ export default {
 
 
 <style scoped>
-
 /* ---[slide]------------------------------ */
 
 .slide {
@@ -54,6 +56,9 @@ export default {
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
   transform-style: inherit;
 }
+/* .fleche {
+  margin-left: 80px;
+} */
 </style>
 
 

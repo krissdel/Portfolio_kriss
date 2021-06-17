@@ -137,20 +137,18 @@ export default {
   margin: auto auto;
   padding-left: 80px;
 }
-
 .grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   grid-template-rows: auto 1.5fr 1fr;
   gap: 2rem;
+  padding: 10px;
 }
-
 h1 {
   color: rgb(17, 236, 229);
   margin-top: 10%;
   margin-bottom: 10%;
 }
-
 .project-listing {
   display: grid;
   box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
