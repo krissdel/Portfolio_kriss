@@ -43,7 +43,6 @@ export default {
 #wrapper {
   text-align: center;
   font-family: "Libre Baskerville", serif;
-  /* margin-top: 10vh; */
 }
 #wrapper h1 {
   white-space: normal;
@@ -122,7 +121,10 @@ h1 span {
   }
 }
 /* -----[souslignage]---------------------------------------- */
-
+h1 {
+  font-family: "Libre Baskerville", serif;
+  color: rgb(17, 236, 229);
+}
 h1::after {
   content: "";
   display: block;
@@ -152,9 +154,4 @@ h1::after {
   }
 }
 
-/* *********************************************** */
-h1 {
-  font-family: "Libre Baskerville", serif;
-  color: rgb(17, 236, 229);
-}
 </style>

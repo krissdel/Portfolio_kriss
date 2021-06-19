@@ -126,8 +126,7 @@
             >Lien Github</a
           >
           <div class="project-image">
-            <a href="https://krissdel.github.io/ohmyfood/"
-            target="_blank">
+            <a href="https://krissdel.github.io/ohmyfood/" target="_blank">
               <img src="../assets/image/ohmyfood2.png" alt="image ohmyfood" />
             </a>
           </div>
@@ -206,9 +205,7 @@ img {
   width: 100%;
   height: auto;
 }
-/* ==================================== */
-
-/* // Animations */
+/* =====[Animations]=============================== */
 
 @keyframes fade-in-up {
   0% {
@@ -261,8 +258,6 @@ img {
 }
 
 /* *************************************************** */
-
-/* Réglages du bloc de texte général */
 #projects {
   text-align: center;
   font-family: "Libre Baskerville", serif;
@@ -271,7 +266,6 @@ img {
 }
 #projects h1 {
   white-space: normal;
-  /* width: 26%; */
   display: inline-block;
   font-size: 3em;
   font-weight: 200;
@@ -282,8 +276,7 @@ img {
   position: relative;
   margin-top: 2vh;
 }
-
-/* Animations des lettres */
+/* -----[Animations des lettres]---------------------------------------- */
 h1 span {
   opacity: 0;
 }

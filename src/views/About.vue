@@ -1,8 +1,6 @@
 <template>
   <div class="container_about">
-    <Name />
-    <!-- <Loader /> -->
-   
+    <Name />   
     <div class="container_about_text">
       <div class="container_text">
         <p class="text-md-start">
@@ -13,8 +11,6 @@
           <br />
           Avançons ensemble . . .
         </p>
-        <!-- <p class="text-md-start">Avançons ensemble ...</p> -->
-
         <p class="text-md-start">
           Web developer with the ability and the skills needed to implementation
           of new projects, I would be proud to put my knowledge at your service
@@ -22,7 +18,6 @@
           <br />
           Let's move forward together . . .
         </p>
-        <!-- <p class="text-md-start">Let's move forward together ...</p> -->
       </div>
     </div>
     <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
@@ -32,24 +27,15 @@
 
 <script>
 import Name from "@/components/Name.vue";
-// import Loader from '../components/Loader.vue';
 
 export default {
   name: "about",
 
   components: {
     Name,
-    // Loader,
   },
 };
 </script>
-
-
-
-
-
-
-
 
 <style scoped>
 .container_about_text {
@@ -62,7 +48,6 @@ export default {
   flex-direction: column;
   text-align: justify;
   width: 70%;
-  /* padding-left: 80px; */
   align-items: center;
 }
 .text-md-start {
@@ -91,6 +76,4 @@ export default {
   justify-content: flex-end;
   color: #515152;
 }
-
-/* -----[tape words]-------------------------------------------- */
 </style>

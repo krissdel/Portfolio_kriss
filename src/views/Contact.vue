@@ -14,9 +14,6 @@
         <span class="tags1"> 𓀾 𓀿 𓁀 𓁁 𓁂 𓁃 𓁄 𓁅 </span>
         <span class="tags2"> 𓁆 𓁇 𓁈 𓁉 𓁍 𓁎 𓁏 </span>
       </div>
-      <!-- -------------------------------------------------- -->
-
-      <!-- -------------------------------------------------- -->
 
       <form class="contact-form" @submit.prevent="sendEmail">
         <div class="row">
@@ -115,15 +112,14 @@ export default {
             message: this.message,
           }
         );
-     
+
         Swal.fire({
-  title: 'thanks!',
-  text: 'Your email has been sent !',
-  icon: 'success',
-  confirmButtonText: 'Cool',
-  confirmButtonColor: '#11ece5',
-})
-      
+          title: "thanks!",
+          text: "Your email has been sent !",
+          icon: "success",
+          confirmButtonText: "Cool",
+          confirmButtonColor: "#11ece5",
+        });
       } catch (error) {
         console.log({ error });
       }
@@ -226,10 +222,6 @@ label {
   color: #515152;
   margin-top: 21vh;
 }
-
-/* *******[Animations des lettres ]******************************************** */
-
-/* Réglages du bloc de texte général */
 #contact {
   text-align: center;
   font-family: "Libre Baskerville", serif;
@@ -249,7 +241,7 @@ label {
   margin-top: 2vh;
 }
 
-/* Animations des lettres */
+/* -----[Animations des lettres]---------------------------------------- */
 h1 span {
   opacity: 0;
 }

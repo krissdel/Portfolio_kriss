@@ -105,101 +105,11 @@ export default {
 .fa-envelope:hover {
   color: rgb(17, 236, 229);
 }
-/* -----[icons:active]----------------------------------- */
-/* 
-.fa-home:active {
-  color: rgb(17, 236, 229);
-}
-.fa-user:active {
-  color: rgb(17, 236, 229);
-}
-.fa-eye:active {
-  color: rgb(17, 236, 229);
-}
-.fa-briefcase:active {
-  color: rgb(17, 236, 229);
-}
-.fa-envelope:active {
-  color: rgb(17, 236, 229);
-} */
-
 .img {
   padding: 10px;
   height: 40px;
 }
-/* =====[icones hover]============================ */
-/* .nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-.nav li {
-  font-size: 12pt;
-  display: block;
-  float: left;
-  height: 90px;
-  width: 145px; 
-  text-align: center; 
-  transition: all 0.2s ease-in-out;
-} */
-/* .nav .home {
-    background: #a3d39c;
-}
-.nav .about {
-    background: #7accc8;
-}
-.nav .projects {
-    background: #4aaaa5;
-}
-.nav .contact {
-    background: #35404f;
-} */
-/* .nav li a {
-  font-family: FontAwesome;
-  color: #eee;
-  font-size: 22pt;
-  text-decoration: none;
-  display: block;
-  padding: 15px;
-} */
-/* .nav li i {
-  color: #fff;
-  padding: 0 10px;
-}
-.nav li b {
-  padding: 15px 0;
-  display: none;
-}
-.nav a:hover {
-  color: #fff;
-}
-.nav a:hover i {
-  display: none;
-}
-.nav a:hover b {
-  display: block;
-} */
-/* ::after {
-  box-sizing: border-box; 
-  box-sizing: content-box;
-} */
-/* id="nav_bar" */
-/* * */
-/* #nav_bar {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-}
 
-#nav_bar:before,
-:after {
-  -webkit-box-sizing: content-box;
-  -moz-box-sizing: content-box;
-  box-sizing: content-box;
-} */
 /* =====[glowing lines]================================== */
 .GlowingLine1 {
   position: absolute;
@@ -225,5 +135,4 @@ export default {
   background: rgb(17, 236, 229);
   box-shadow: rgb(17 236 229) 0px 0px 6px 0.7px;
 }
-/* ====================================================== */
 </style>

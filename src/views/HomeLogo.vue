@@ -24,9 +24,7 @@
 <script>
 import About from "./About.vue";
 import Skill from "./Skill.vue";
-
 import Arrow from "@/components/Arrow.vue";
-
 import Projects from "./Projects.vue";
 import Contact from "./Contact.vue";
 
@@ -56,9 +54,6 @@ export default {
   box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.7);
   transform-style: inherit;
 }
-/* .fleche {
-  margin-left: 80px;
-} */
 </style>
 
 

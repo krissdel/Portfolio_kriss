@@ -14,8 +14,6 @@
       </h1>
     </div>
     <div class="words">
-      <!-- <Words /> -->
-       <!-- <div id="wordcloud"> -->
          <kinesis-container>
       <kinesis-element :strength="30">
       <wordcloud
@@ -96,7 +94,7 @@ export default {
           "name": "BEM",
           "value": 9
         },
-        // ------------------------
+        // -----[soft skills]-------------------
          {
           "name": "attentive",
           "value": 19

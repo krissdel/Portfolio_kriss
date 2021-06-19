@@ -1,31 +1,21 @@
 <template>
   <div id="app">
-    
     <Sound />
-     <!-- <Loader /> -->
     <NavBar />
-    <!-- <SoftSkills msg="Christian DELORME "/> -->
-
     <router-view />
-   
   </div>
 </template>
 
 <script>
-// import Loader from './components/Loader.vue';
 import NavBar from "./components/NavBar.vue";
 import Sound from "./components/Sound.vue";
-
-// import Map from './components/Map.vue'
 
 export default {
   name: "App",
 
   components: {
-    // Loader,
     NavBar,
     Sound,
-    // Map
   },
 };
 </script>
@@ -43,14 +33,5 @@ export default {
 body {
   background-color: #060b0e;
   font-weight: bold;
-  /* width: max-content; */
-  /* width: auto; */
-  /* margin: 0 auto; */
-  /* flex-direction: initial;
-    display: flex;
-    flex-wrap: wrap;
-    width: 723px;
-    max-width: 900px;
-    margin: auto; */
 }
 </style>
