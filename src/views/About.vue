@@ -30,7 +30,6 @@ import Name from "@/components/Name.vue";
 
 export default {
   name: "about",
-
   components: {
     Name,
   },
@@ -57,7 +56,6 @@ export default {
   padding-bottom: 50px;
   max-width: 40pc;
 }
-
 .card {
   margin-bottom: 6pc;
   border-color: #060b0e;
