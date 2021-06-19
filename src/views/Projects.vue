@@ -36,7 +36,6 @@
       <div class="project-listing">
         <article>
           <h2 class="project-title">Groupomania</h2>
-
           <a
             class="project-link"
             href="https://github.com/krissdel/groupomania"
@@ -44,7 +43,7 @@
             >Lien Github</a
           >
           <div class="project-image">
-            <a href="#">
+            <a href="https://krissdel.github.io/groupomania/" target="_blank">
               <img
                 src="../assets/image/groupomania_projet2.png"
                 alt="image groupomania"
@@ -64,7 +63,10 @@
             >Lien Github</a
           >
           <div class="project-image">
-            <a href="#">
+            <a
+              href="https://github.com/krissdel/projet-6/edit/main/README.md"
+              target="_blank"
+            >
               <img
                 src="../assets/image/so_pekocko2.png"
                 alt="image so_pekocko"
@@ -77,11 +79,17 @@
       <div class="project-listing">
         <article>
           <h2 class="project-title">Orinoco</h2>
-          <a class="project-link" href="https://github.com/krissdel/orinoco-website"
-           target="_blank"
-           >Lien Github</a>
+          <a
+            class="project-link"
+            href="https://github.com/krissdel/orinoco-website"
+            target="_blank"
+            >Lien Github</a
+          >
           <div class="project-image">
-            <a href="#">
+            <a
+              href="https://github.com/krissdel/orinoco-website/new/master?readme=1"
+              target="_blank"
+            >
               <img src="../assets/image/orinoco2.png" alt="image orinoco" />
             </a>
           </div>
@@ -91,11 +99,14 @@
       <div class="project-listing">
         <article>
           <h2 class="project-title">La Chouette</h2>
-          <a class="project-link" href="#"
-          target="_blank"
-          >Lien Github</a>
+          <a
+            class="project-link"
+            href="https://github.com/krissdel/chouetteafter"
+            target="_blank"
+            >Lien Github</a
+          >
           <div class="project-image">
-            <a href="#">
+            <a href="https://krissdel.github.io/chouetteafter/" target="_blank">
               <img
                 src="../assets/image/chouette_agence2.png"
                 alt="image la chouette agence"
@@ -108,9 +119,15 @@
       <div class="project-listing">
         <article>
           <h2 class="project-title">Ohmyfood</h2>
-          <a class="project-link" href="#">Lien Github</a>
+          <a
+            class="project-link"
+            href="https://github.com/krissdel/ohmyfood"
+            target="_blank"
+            >Lien Github</a
+          >
           <div class="project-image">
-            <a href="#">
+            <a href="https://krissdel.github.io/ohmyfood/"
+            target="_blank">
               <img src="../assets/image/ohmyfood2.png" alt="image ohmyfood" />
             </a>
           </div>
@@ -121,9 +138,14 @@
         <article>
           <h2 class="project-title">CV</h2>
 
-          <a class="project-link" href="#">Lien Github</a>
+          <a
+            class="project-link"
+            href="https://github.com/krissdel/CV4"
+            target="_blank"
+            >Lien Github</a
+          >
           <div class="project-image">
-            <a href="#">
+            <a href="https://krissdel.github.io/CV4/" target="_blank">
               <img src="../assets/image/cv2.png" alt="image projet CV" />
             </a>
           </div>
@@ -135,13 +157,9 @@
 </template>
 
 <script>
-// import Loader from '@/components/Loader.vue'
-
 export default {
   name: "projects",
-  components: {
-    // Loader
-  },
+  components: {},
 };
 </script>
 
