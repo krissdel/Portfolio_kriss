@@ -28,6 +28,7 @@
               aria-label="First name"
               v-model="First_name"
               name="First_name"
+              required
             />
           </div>
 
@@ -39,28 +40,31 @@
               aria-label="Last_name"
               v-model="Last_name"
               name="Last_name"
+              required
             />
           </div>
           <div class="col">
-            <label for="inputEmail4" class="form-label"></label>
+            <label for="inputEmail" class="form-label"></label>
             <input
               type="email"
               class="form-control"
-              id="inputEmail4"
+              id="inputEmail"
               placeholder="Email"
               v-model="email"
               name="email"
+              required
             />
           </div>
           <div class="col">
-            <label for="floatingTextarea2">Comments</label>
+            <label for="Textarea"></label>
             <textarea
               class="form-control"
               placeholder="Leave a message here"
-              id="floatingTextarea2"
+              id="Textarea"
               style="height: 100px"
               name="message"
               v-model="message"
+              required
             ></textarea>
           </div>
         </div>
@@ -81,6 +85,7 @@
 <script>
 import Map from "@/components/Map.vue";
 import emailjs from "emailjs-com";
+import Swal from "sweetalert2";
 
 export default {
   name: "Contact",
@@ -100,20 +105,29 @@ export default {
     sendEmail(e) {
       try {
         emailjs.sendForm(
-          "YOUR_SERVICE_ID",
-          "YOUR_TEMPLATE_ID",
+          "service_s13wx1p",
+          "template_o0rw5dk",
           e.target,
-          "YOUR_USER_ID",
+          "user_PQSMzr2oEWM5M28Wd2gg2",
           {
             name: this.name,
             email: this.email,
             message: this.message,
           }
         );
+     
+        Swal.fire({
+  title: 'thanks!',
+  text: 'Your email has been sent !',
+  icon: 'success',
+  confirmButtonText: 'Cool',
+  confirmButtonColor: '#11ece5',
+})
+      
       } catch (error) {
         console.log({ error });
       }
-      // Reset form field
+      // -----[Reset form] ------------------------------
       this.First_name = "";
       this.Last_name = "";
       this.email = "";
@@ -134,7 +148,6 @@ h1 {
   max-width: 800px;
   padding-top: 5pc;
   width: fit-content;
-  /* display: flex; */
   width: auto;
   padding-left: 80px;
 }
@@ -202,7 +215,6 @@ label {
   top: 0;
   display: flex;
   color: #515152;
-  /* margin-left: 66vw; */
   margin-top: 21vh;
 }
 .tags6 {
@@ -212,7 +224,6 @@ label {
   top: 0;
   display: flex;
   color: #515152;
-  /* margin-left: 80vw; */
   margin-top: 21vh;
 }
 

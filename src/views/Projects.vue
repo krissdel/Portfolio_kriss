@@ -37,7 +37,10 @@
         <article>
           <h2 class="project-title">Groupomania</h2>
 
-          <a class="project-link" href="https://github.com/krissdel/groupomania"
+          <a
+            class="project-link"
+            href="https://github.com/krissdel/groupomania"
+            target="_blank"
             >Lien Github</a
           >
           <div class="project-image">
@@ -54,10 +57,18 @@
       <div class="project-listing">
         <article>
           <h2 class="project-title">So Pekocko</h2>
-          <a class="project-link" href="#">Lien Github</a>
+          <a
+            class="project-link"
+            href="https://github.com/krissdel/projet-6"
+            target="_blank"
+            >Lien Github</a
+          >
           <div class="project-image">
             <a href="#">
-              <img src="../assets/image/so_pekocko2.png" alt="image so_pekocko" />
+              <img
+                src="../assets/image/so_pekocko2.png"
+                alt="image so_pekocko"
+              />
             </a>
           </div>
         </article>
@@ -66,7 +77,9 @@
       <div class="project-listing">
         <article>
           <h2 class="project-title">Orinoco</h2>
-          <a class="project-link" href="#">Lien Github</a>
+          <a class="project-link" href="https://github.com/krissdel/orinoco-website"
+           target="_blank"
+           >Lien Github</a>
           <div class="project-image">
             <a href="#">
               <img src="../assets/image/orinoco2.png" alt="image orinoco" />
@@ -78,7 +91,9 @@
       <div class="project-listing">
         <article>
           <h2 class="project-title">La Chouette</h2>
-          <a class="project-link" href="#">Lien Github</a>
+          <a class="project-link" href="#"
+          target="_blank"
+          >Lien Github</a>
           <div class="project-image">
             <a href="#">
               <img
@@ -227,7 +242,6 @@ img {
   margin-top: 21vh;
 }
 
-
 /* *************************************************** */
 
 /* Réglages du bloc de texte général */
@@ -235,7 +249,7 @@ img {
   text-align: center;
   font-family: "Libre Baskerville", serif;
   margin-top: 10vh;
-   margin-bottom: 10vh;
+  margin-bottom: 10vh;
 }
 #projects h1 {
   white-space: normal;
@@ -248,8 +262,7 @@ img {
   background-clip: text;
   -webkit-background-clip: text;
   position: relative;
-    margin-top: 2vh;
-
+  margin-top: 2vh;
 }
 
 /* Animations des lettres */
